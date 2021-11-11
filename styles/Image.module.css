@@ -1,0 +1,8 @@
+.imageHolder {
+  width: 600px;
+  border: 10px solid white;
+  transform: rotate(-15deg);
+  position:fixed;
+  top: 200px;
+  left: 200px;
+}
