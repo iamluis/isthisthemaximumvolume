@@ -7,8 +7,8 @@ import styles from '../../styles/Image.module.css'
 export interface ImageProps {
   width: number;
   rotation: number;
-  top: number;
-  left: number;
+  top: string;
+  left: string;
 }
 
 const Home: FunctionComponent<ImageProps> = (props) => {
@@ -19,9 +19,9 @@ const Home: FunctionComponent<ImageProps> = (props) => {
       {`
         .container-location {
           width: ${props.width}px;
-          transform: rotate(${props.rotation}deg);
-          top: ${props.top}px;
-          left: ${props.left}px;
+          transform: rotate(${props.rotation}deg) translate(-50%, -50%);
+          top: ${props.top};
+          left: ${props.left};
         }
       `}
     </style>

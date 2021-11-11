@@ -1,9 +1,11 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from '../components/image/Image'
-import styles from '../styles/Home.module.css'
-
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { useState } from 'react';
+import { Range } from 'react-range';
+import Image from '../components/image/Image';
+import styles from '../styles/Home.module.css';
 const Home: NextPage = () => {
+  const [value, setValue] = useState([0]);
   return (
     <div className={styles.container}>
       <Head>
@@ -14,9 +16,43 @@ const Home: NextPage = () => {
       <div className={styles.background}>
         <div className={styles.blur}></div>
         <div className={styles.box}>
-          <Image width={600} rotation={-10} top={200} left={300}></Image>
-          <Image width={900} rotation={10} top={300} left={1000}></Image>
-          <Image width={300} rotation={0} top={300} left={800}></Image>
+          <Image width={700} rotation={-10} top={"30%"} left={"30%"}></Image>
+          <Image width={800} rotation={10} top={"40%"} left={"70%"}></Image>
+          <Image width={300} rotation={0} top={"30%"} left={"50%"}></Image>
+          <div className={styles.slider}>
+            <Range
+              step={5}
+              min={0}
+              max={100}
+              values={value}
+              onChange={setValue}
+              renderTrack={({ props, children }) => (
+                <div
+                  {...props}
+                  style={{
+                    ...props.style,
+                    height: '6px',
+                    width: '100%',
+                    backgroundColor: '#fff'
+                  }}
+                >
+                  {children}
+                </div>
+              )}
+              renderThumb={({ props }) => (
+                <div
+                  {...props}
+                  style={{
+                    ...props.style,
+                    height: '42px',
+                    width: '42px',
+                    backgroundColor: '#fff'
+                  }}
+                />
+              )}
+            />
+          </div>
+          
         </div>
       </div>
       
