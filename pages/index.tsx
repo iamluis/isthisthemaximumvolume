@@ -14,7 +14,9 @@ const Home: NextPage = () => {
       <div className={styles.background}>
         <div className={styles.blur}></div>
         <div className={styles.box}>
-          <Image></Image>
+          <Image width={600} rotation={-10} top={200} left={300}></Image>
+          <Image width={900} rotation={10} top={300} left={1000}></Image>
+          <Image width={300} rotation={0} top={300} left={800}></Image>
         </div>
       </div>
       
