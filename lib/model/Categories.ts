@@ -34,18 +34,50 @@ const categories: Category[] = [
     ],
   },
   {
-    id: 'drivers',
-    explanation: 'Wow',
+    id: 'brazil',
+    explanation: 'Vuvuzela!',
     images: [
       {
         id: 'hamilton',
+        position: {
+          x: '60%',
+          y: '30%',
+        },
+        width: '500px',
+        rotation: 20,
+        url: 'hamilton',
+      },
+    ],
+  },
+  {
+    id: 'monaco',
+    explanation: 'Moneyzzzz',
+    images: [
+      {
+        id: 'vettel',
+        position: {
+          x: '30%',
+          y: '50%',
+        },
+        width: '700px',
+        rotation: -30,
+        url: 'vettel',
+      },
+    ],
+  },
+  {
+    id: 'spain',
+    explanation: 'Free Catalonia',
+    images: [
+      {
+        id: 'alonso',
         position: {
           x: '30%',
           y: '30%',
         },
         width: '700px',
-        rotation: -10,
-        url: 'hamilton',
+        rotation: 170,
+        url: 'alonso',
       },
     ],
   },

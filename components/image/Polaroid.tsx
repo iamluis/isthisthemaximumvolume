@@ -19,7 +19,7 @@ const Polaroid: FunctionComponent<ImageProps> = (props) => {
         {`
           .container-location {
             width: ${props.width};
-            transform: rotate(${props.rotation}deg) translate(-50%, -50%);
+            transform: translate(-50%, -50%) rotate(${props.rotation}deg);
             top: ${props.top};
             left: ${props.left};
           }

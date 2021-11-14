@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useState } from 'react'
+import { useRouter } from 'next/router'
 import { Range } from 'react-range'
 import Polaroid from '../../components/image/Polaroid'
 import { getCategoryIds } from '../../lib/api/getCategories'
@@ -8,8 +8,14 @@ import { getCategoryBySlug } from '../../lib/api/getCategoryBySlug'
 import { Category } from '../../lib/model/Categories'
 import styles from '../../styles/Home.module.css'
 
-const StoryPage: NextPage<Category> = (props) => {
-  const [value, setValue] = useState([0])
+const StoryPage: NextPage<{
+  category: Category
+  size: number
+  idx: number
+  ids: string[]
+}> = ({ category, size, idx, ids }) => {
+  const router = useRouter()
+
   return (
     <div className={styles.container}>
       <Head>
@@ -23,7 +29,7 @@ const StoryPage: NextPage<Category> = (props) => {
       <div className={styles.background}>
         <div className={styles.blur}></div>
         <div className={styles.box}>
-          {props.images.map((image) => {
+          {category.images.map((image) => {
             return (
               <Polaroid
                 alt={image.id}
@@ -38,11 +44,12 @@ const StoryPage: NextPage<Category> = (props) => {
           })}
           <div className={styles.slider}>
             <Range
-              step={5}
               min={0}
-              max={100}
-              values={value}
-              onChange={setValue}
+              max={size - 1}
+              values={[idx]}
+              onChange={([newIdx]) => {
+                router.push('/story/' + ids[newIdx])
+              }}
               renderTrack={({ props, children }) => (
                 <div
                   {...props}
@@ -78,14 +85,16 @@ const StoryPage: NextPage<Category> = (props) => {
 export async function getStaticProps({ params }: { params: { slug: string } }) {
   const { slug } = params
   const category = getCategoryBySlug(slug)
+  const ids = getCategoryIds()
 
   if (!category) {
     return {
       notFound: true,
     }
   }
+
   return {
-    props: category,
+    props: { category, size: ids.length, idx: ids.indexOf(slug), ids },
   }
 }
 
