@@ -1,4 +1,29 @@
-.imageHolder {
-  border: 10px solid white;
-  position: fixed;
+.imageHolder a {
+  background: #ffffff;
+  display: block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 80ms ease-out;
+  z-index: 0;
+  position: relative;
+}
+
+.imageHolder a:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  top: 15px;
+  position: relative;
+}
+
+.imageHolder img {
+  display: block;
+}
+
+.imageHolder a:hover {
+  transform: scale(1.3);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
 }

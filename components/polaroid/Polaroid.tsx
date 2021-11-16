@@ -18,6 +18,8 @@ const Polaroid: FunctionComponent<ImageProps> = (props) => {
       <style jsx>
         {`
           .container-location {
+            display: inline-block;
+            position: relative;
             width: ${props.width};
             transform: translate(-50%, -50%) rotate(${props.rotation}deg);
             top: ${props.top};
@@ -25,13 +27,19 @@ const Polaroid: FunctionComponent<ImageProps> = (props) => {
           }
         `}
       </style>
-      <div className={`${styles.imageHolder} container-location`}>
-        <Image
-          priority
-          src={images.get(props.src) ?? ''}
-          alt={props.alt}
-          layout="responsive"
-        ></Image>
+      <div
+        className={`${styles.imageHolder} container-location`}
+        title={props.alt}
+      >
+        <a href="#" title={props.alt}>
+          <Image
+            priority
+            src={images.get(props.src) ?? ''}
+            alt={props.alt}
+            title={props.alt}
+            layout="responsive"
+          ></Image>
+        </a>
       </div>
     </>
   )
