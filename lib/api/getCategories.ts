@@ -1,5 +1,5 @@
-import Categories from '../model/Categories'
+import { Categories } from '../db'
 
 export function getCategoryIds() {
-  return Categories.map((cat)=>cat.id)
+  return Categories.map((cat) => cat.id)
 }

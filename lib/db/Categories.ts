@@ -1,10 +1,4 @@
-import { Image } from './Image'
-
-interface Category {
-  id: string
-  explanation: string
-  images: Image[]
-}
+import Category from '../model/Category'
 
 const categories: Category[] = [
   {
@@ -19,7 +13,7 @@ const categories: Category[] = [
         },
         width: '800px',
         rotation: 10,
-        url: 'vettel',
+        url: 'ChopsticksGlases',
       },
       {
         id: 'alonso',
@@ -29,7 +23,7 @@ const categories: Category[] = [
         },
         width: '300px',
         rotation: 0,
-        url: 'alonso',
+        url: 'ChopsticksCouch',
       },
     ],
   },
@@ -45,7 +39,7 @@ const categories: Category[] = [
         },
         width: '500px',
         rotation: 20,
-        url: 'hamilton',
+        url: 'ChopsticksCouch',
       },
     ],
   },
@@ -59,9 +53,9 @@ const categories: Category[] = [
           x: '30%',
           y: '50%',
         },
-        width: '700px',
-        rotation: -30,
-        url: 'vettel',
+        width: '450px',
+        rotation: 0,
+        url: 'ChopsticksGlases',
       },
     ],
   },
@@ -77,11 +71,10 @@ const categories: Category[] = [
         },
         width: '700px',
         rotation: 170,
-        url: 'alonso',
+        url: 'ChopsticksCouch',
       },
     ],
   },
 ]
 
-export type { Category }
-export { categories as default }
+export default categories

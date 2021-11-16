@@ -27,6 +27,7 @@ const Polaroid: FunctionComponent<ImageProps> = (props) => {
       </style>
       <div className={`${styles.imageHolder} container-location`}>
         <Image
+          priority
           src={images.get(props.src) ?? ''}
           alt={props.alt}
           layout="responsive"

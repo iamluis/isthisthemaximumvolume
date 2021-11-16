@@ -2,10 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { Range } from 'react-range'
-import Polaroid from '../../components/image/Polaroid'
+import Polaroid from '../../components/polaroid/Polaroid'
 import { getCategoryIds } from '../../lib/api/getCategories'
 import { getCategoryBySlug } from '../../lib/api/getCategoryBySlug'
-import { Category } from '../../lib/model/Categories'
+import Category from '../../lib/model/Category'
 import styles from '../../styles/Home.module.css'
 
 const StoryPage: NextPage<{

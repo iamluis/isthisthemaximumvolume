@@ -1,6 +1,6 @@
-import Alonso from '../../public/alonso.jpg'
-import Hamilton from '../../public/hamilton.jpg'
-import Vettel from '../../public/vettel.jpg'
+import ChopsticksCouch from '../../public/chopsticks/couch.jpeg'
+import ChopsticksGlases from '../../public/chopsticks/glases.jpeg'
+import ChopssticksPolaroid from '../../public/chopsticks/polaroid.jpeg'
 
 /**
  *  x: zero = left of screen | either px or % to px max 1920
@@ -20,7 +20,7 @@ export interface Image {
 }
 
 export const images: Map<string, StaticImageData> = new Map([
-  ['hamilton', Hamilton],
-  ['alonso', Alonso],
-  ['vettel', Vettel],
+  ['ChopsticksGlases', ChopsticksGlases],
+  ['ChopsticksCouch', ChopsticksCouch],
+  ['ChopssticksPolaroid', ChopssticksPolaroid],
 ])
