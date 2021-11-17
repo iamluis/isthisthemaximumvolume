@@ -28,6 +28,32 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'greece_boat',
+    explanation: 'Wow',
+    images: [
+      {
+        id: '2cuties',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'GRBoat2cuties',
+      },
+      {
+        id: '3cuties',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRBoat3cuties',
+      },
+    ],
+  },
+  {
     id: 'brazil',
     explanation: 'Vuvuzela!',
     images: [
