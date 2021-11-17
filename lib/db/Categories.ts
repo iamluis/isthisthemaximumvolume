@@ -222,6 +222,62 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'Crazy',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'lestgoshopping',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'Crazy_letsgoshopping',
+      },
+      {
+        id: 'noestabien',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Crazy_noestabien',
+      },
+      {
+        id: 'on_the_car',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Crazy_on_the_car',
+      },
+      {
+        id: 'posing_statue',
+        position: {
+          x: '10%',
+          y: '90%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Crazy_posing_statue',
+      },
+      {
+        id: 'yoda',
+        position: {
+          x: '90%',
+          y: '10%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Crazy_yoda',
+      }
+    ],
+  },
+  {
     id: 'food',
     explanation: 'Wow',
     images: [
