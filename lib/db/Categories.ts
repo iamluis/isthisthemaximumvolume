@@ -6,23 +6,23 @@ const categories: Category[] = [
     explanation: 'Wow',
     images: [
       {
-        id: 'vettel',
+        id: 'More noice',
         position: {
           x: '70%',
           y: '40%',
         },
-        width: '800px',
+        width: '500px',
         rotation: 10,
         url: 'ChopsticksGlases',
       },
       {
-        id: 'alonso',
+        id: 'Noice',
         position: {
-          x: '50%',
+          x: '0%',
           y: '30%',
         },
-        width: '300px',
-        rotation: 0,
+        width: '800px',
+        rotation: -10,
         url: 'ChopsticksCouch',
       },
     ],
@@ -32,7 +32,7 @@ const categories: Category[] = [
     explanation: 'Wow',
     images: [
       {
-        id: '2cuties',
+        id: 'Still noice',
         position: {
           x: '70%',
           y: '40%',
@@ -78,7 +78,7 @@ const categories: Category[] = [
     explanation: 'Wow',
     images: [
       {
-        id: 'cuties',
+        id: 'Blurry but stylish',
         position: {
           x: '70%',
           y: '40%',

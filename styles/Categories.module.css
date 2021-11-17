@@ -1,6 +1,11 @@
 .container {
   height: 100vh;
+  font-family: 'Anonymous Pro', monospace;
 }
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 /* // Content we're putting a blur over */
 .background {
   background-image: url('../public/background.jpeg');
@@ -29,7 +34,7 @@
 
 .slider {
   width: 90%;
-  position: relative;
+  position: absolute;
   top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
