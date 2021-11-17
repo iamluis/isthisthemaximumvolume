@@ -2,7 +2,7 @@ import ChopsticksCouch from '../../public/chopsticks/couch.jpeg'
 import ChopsticksGlases from '../../public/chopsticks/glases.jpeg'
 import ChopssticksPolaroid from '../../public/chopsticks/polaroid.jpeg'
 import GRBoat2cuties from '../../public/GRBoat/2cuties.jpeg'
-import GRBoat3cuties from '../../public/GRBoat/33cuties.jpeg'
+import GRBoat3cuties from '../../public/GRBoat/3cuties.jpeg'
 
 /**
  *  x: zero = left of screen | either px or % to px max 1920
