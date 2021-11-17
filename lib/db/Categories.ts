@@ -120,6 +120,52 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'food',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'burger',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'Foodburger',
+      },
+      {
+        id: 'cake',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Foodcake',
+      },
+      {
+        id: 'hanoi',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Foodhanoi',
+      },
+      {
+        id: 'vagelis',
+        position: {
+          x: '10%',
+          y: '50%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Foodvagelis',
+      }
+    ],
+  },
+  {
     id: 'brazil',
     explanation: 'Vuvuzela!',
     images: [

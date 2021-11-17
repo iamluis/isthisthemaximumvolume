@@ -9,6 +9,10 @@ import GRPhiriplaka3crazies from '../../public/GRPhiriplaka/3crazies.jpeg'
 import GRPhiriplaka4hot from '../../public/GRPhiriplaka/4hot.jpeg'
 import GRPhiriplakahats from '../../public/GRPhiriplaka/3crazies.jpeg'
 import GRPhiriplakamermade from '../../public/GRPhiriplaka/mermade.jpeg'
+import Foodburger from '../../public/Food/burger.jpeg'
+import Foodcake from '../../public/Food/cakeee.jpeg'
+import Foodhanoi from '../../public/Food/hanoi.jpeg'
+import Foodvagelis from '../../public/Food/vagelis.jpeg'
 
 
 /**
@@ -39,5 +43,9 @@ export const images: Map<string, StaticImageData> = new Map([
   ['GRPhiriplaza3crazies', GRPhiriplaka3crazies],
   ['GRPhiriplaza4hot',GRPhiriplaka4hot],
   ['GRPhiriplazahats',GRPhiriplakahats],
-  ['GRPhiriplazamermade',GRPhiriplakamermade]
+  ['GRPhiriplazamermade',GRPhiriplakamermade],
+  ['Foodburger',Foodburger],
+  ['Foodcake',Foodcake],
+  ['Foodhanoi',Foodhanoi],
+  ['Foodvagelis',Foodvagelis]
 ])
