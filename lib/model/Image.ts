@@ -1,4 +1,4 @@
-import ChopsticksCouch from '../../public/chopsticks/couch.jpeg'
+import ChopsticksCouch from '../../public/sofas/couch.jpeg'
 import ChopsticksGlases from '../../public/chopsticks/glases.jpeg'
 import ChopssticksPolaroid from '../../public/chopsticks/polaroid.jpeg'
 import GRBoat2cuties from '../../public/GRBoat/2cuties.jpeg'
@@ -38,6 +38,11 @@ import Masks_mask2 from '../../public/Masks/mask2.jpeg'
 import Model_model from '../../public/model/model.jpeg'
 import Model_model1 from '../../public/model/model1.jpeg'
 import Model_model2 from '../../public/model/model2.jpeg'
+import Sofa_more_sofa from '../../public/sofas/more_sofa.jpeg'
+import Sofa_popcorn from '../../public/sofas/popcorn.jpeg'
+import Sofa_sofa_elena from '../../public/sofas/sofa_elena.jpeg'
+import Sofa_Two_bitches from '../../public/sofas/Two_bitches.jpeg'
+
 /**
  *  x: zero = left of screen | either px or % to px max 1920
  *  y: zero = top of screen | either px or % to px max 1080
@@ -95,5 +100,9 @@ export const images: Map<string, StaticImageData> = new Map([
   ['Masks_mask2',Masks_mask2],
   ['Model_model',Model_model],
   ['Model_model1',Model_model1],
-  ['Model_model2',Model_model2]
+  ['Model_model2',Model_model2],
+  ['Sofa_more_sofa',Sofa_more_sofa],
+  ['Sofa_popcorn',Sofa_popcorn],
+  ['Sofa_sofa_elena',Sofa_sofa_elena],
+  ['Sofa_Two_bitches',Sofa_Two_bitches]
 ])

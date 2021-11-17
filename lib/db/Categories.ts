@@ -380,6 +380,62 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'sofas',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'couch',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'ChopsticksCouch',
+      },
+      {
+        id: 'more_sofa',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Sofa_more_sofa',
+      },
+      {
+        id: 'popcorn',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Sofa_popcorn',
+      },
+      {
+        id: 'sofa_elena',
+        position: {
+          x: '10%',
+          y: '50%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Sofa_sofa_elena',
+      },
+      {
+        id: 'Two_bitches',
+        position: {
+          x: '10%',
+          y: '90%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Sofa_sofa_elena',
+      }
+    ],
+  },
+  {
     id: 'masks',
     explanation: 'Wow',
     images: [
