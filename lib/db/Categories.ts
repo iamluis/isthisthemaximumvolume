@@ -74,6 +74,52 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'chopsticks_party',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'cuties',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'ChopsticksCuties',
+      },
+      {
+        id: 'glases',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'ChopsticksGlases',
+      },
+      {
+        id: 'polaroid',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'ChopsticksPolaroid',
+      },
+      {
+        id: 'model',
+        position: {
+          x: '10%',
+          y: '50%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRBoatmodel',
+      }
+    ],
+  },
+  {
     id: 'greece_phiri',
     explanation: 'Wow',
     images: [

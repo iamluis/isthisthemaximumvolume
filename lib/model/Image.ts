@@ -1,6 +1,7 @@
 import ChopsticksCouch from '../../public/sofas/couch.jpeg'
 import ChopsticksGlases from '../../public/chopsticks/glases.jpeg'
-import ChopssticksPolaroid from '../../public/chopsticks/polaroid.jpeg'
+import ChopsticksPolaroid from '../../public/chopsticks/polaroid.jpeg'
+import ChopsticksCuties from '../../public/chopsticks/cuties.jpeg'
 import GRBoat2cuties from '../../public/GRBoat/2cuties.jpeg'
 import GRBoat3cuties from '../../public/GRBoat/3cuties.jpeg'
 import GRBoatdiving from '../../public/GRBoat/diving.jpeg'
@@ -65,7 +66,8 @@ export interface Image {
 export const images: Map<string, StaticImageData> = new Map([
   ['ChopsticksGlases', ChopsticksGlases],
   ['ChopsticksCouch', ChopsticksCouch],
-  ['ChopssticksPolaroid', ChopssticksPolaroid],
+  ['ChopsticksPolaroid', ChopsticksPolaroid],
+  ['ChopsticksCuties', ChopsticksCuties],
   ['GRBoat2cuties', GRBoat2cuties],
   ['GRBoat3cuties', GRBoat3cuties],
   ['GRBoatdiving', GRBoatdiving],
