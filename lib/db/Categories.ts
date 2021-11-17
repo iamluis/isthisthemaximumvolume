@@ -278,6 +278,62 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'Hats',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'gorro1',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'Hats_gorro1',
+      },
+      {
+        id: 'gorro2',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Hats_gorro2',
+      },
+      {
+        id: 'gorro3',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Hats_gorro3',
+      },
+      {
+        id: 'gorro4',
+        position: {
+          x: '10%',
+          y: '90%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Hats_gorro4',
+      },
+      {
+        id: 'gorro5',
+        position: {
+          x: '90%',
+          y: '10%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Hats_gorro5',
+      }
+    ],
+  },
+  {
     id: 'food',
     explanation: 'Wow',
     images: [

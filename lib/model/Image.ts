@@ -13,7 +13,25 @@ import Foodburger from '../../public/Food/burger.jpeg'
 import Foodcake from '../../public/Food/cakeee.jpeg'
 import Foodhanoi from '../../public/Food/hanoi.jpeg'
 import Foodvagelis from '../../public/Food/vagelis.jpeg'
-
+import Cleaning_carton from '../../public/cleaning/carton.jpeg'
+import Cleaning_dreft from '../../public/cleaning/dreft.jpeg'
+import Cleaning_rollo from '../../public/cleaning/rollo.jpeg'
+import Coloc_cena from '../../public/coloc/cleaning.jpeg'
+import Coloc_funeral from '../../public/coloc/funeral.jpeg'
+import Coloc_piercing from '../../public/coloc/piercing.jpeg'
+import Coloc_shirts from '../../public/coloc/shirts.jpeg'
+import Coloc_snow from '../../public/coloc/snow.jpeg'
+import Coloc_stairs from '../../public/coloc/stairs.jpeg'
+import Crazy_letsgoshopping from '../../public/crazy/letsgoshopping.jpeg'
+import Crazy_noestabien from '../../public/crazy/noestabien.jpeg'
+import Crazy_on_the_car from '../../public/crazy/on_the_car.jpeg'
+import Crazy_posing_statue from '../../public/crazy/posing_statue.jpeg'
+import Crazy_yoda from '../../public/crazy/yoda.jpeg'
+import Hats_gorro1 from '../../public/hats/gorro1.jpeg'
+import Hats_gorro2 from '../../public/hats/gorro2.jpeg'
+import Hats_gorro3 from '../../public/hats/gorro3.jpeg'
+import Hats_gorro4 from '../../public/hats/gorro4.jpeg'
+import Hats_gorro5 from '../../public/hats/gorro5.jpeg'
 
 /**
  *  x: zero = left of screen | either px or % to px max 1920
@@ -47,5 +65,24 @@ export const images: Map<string, StaticImageData> = new Map([
   ['Foodburger',Foodburger],
   ['Foodcake',Foodcake],
   ['Foodhanoi',Foodhanoi],
-  ['Foodvagelis',Foodvagelis]
+  ['Foodvagelis',Foodvagelis],
+  ['Cleaning_dreft',Cleaning_dreft],
+  ['Cleaning_rollo',Cleaning_rollo],
+  ['Cleaning_carton',Cleaning_carton],
+  ['Coloc_cena',Coloc_cena],
+  ['Coloc_funeral',Coloc_funeral],
+  ['Coloc_piercing',Coloc_piercing],
+  ['Coloc_shirts',Coloc_shirts],
+  ['Coloc_snow',Coloc_snow],
+  ['Coloc_stairs',Coloc_stairs],
+  ['Crazy_letsgoshopping',Crazy_letsgoshopping],
+  ['Crazy_noestabie',Crazy_noestabien],
+  ['Crazy_on_the_car',Crazy_on_the_car],
+  ['Crazy_posing_statue',Crazy_posing_statue],
+  ['Crazy_yoda',Crazy_yoda],
+  ['Hats_gorro1', Hats_gorro1],
+  ['Hats_gorro2', Hats_gorro2],
+  ['Hats_gorro3', Hats_gorro3],
+  ['Hats_gorro4', Hats_gorro4],
+  ['Hats_gorro5', Hats_gorro5]
 ])
