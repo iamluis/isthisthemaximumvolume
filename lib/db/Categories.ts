@@ -156,6 +156,72 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'Coloc',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'cena',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'Coloc_cena',
+      },
+      {
+        id: 'funeral',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Coloc_funeral',
+      },
+      {
+        id: 'piercing',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Coloc_piercing',
+      },
+      {
+        id: 'shirts',
+        position: {
+          x: '10%',
+          y: '90%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Coloc_shirts',
+      },
+      {
+        id: 'snow',
+        position: {
+          x: '90%',
+          y: '10%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Coloc_snow',
+      },
+      {
+        id: 'stairs',
+        position: {
+          x: '80%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Coloc_stairs',
+      }
+    ],
+  },
+  {
     id: 'food',
     explanation: 'Wow',
     images: [
