@@ -32,6 +32,9 @@ import Hats_gorro2 from '../../public/hats/gorro2.jpeg'
 import Hats_gorro3 from '../../public/hats/gorro3.jpeg'
 import Hats_gorro4 from '../../public/hats/gorro4.jpeg'
 import Hats_gorro5 from '../../public/hats/gorro5.jpeg'
+import Masks_mask_party from '../../public/Masks/mask_party.jpeg'
+import Masks_mask1 from '../../public/Masks/mask1.jpeg'
+import Masks_mask2 from '../../public/Masks/mask2.jpeg'
 
 /**
  *  x: zero = left of screen | either px or % to px max 1920
@@ -84,5 +87,8 @@ export const images: Map<string, StaticImageData> = new Map([
   ['Hats_gorro2', Hats_gorro2],
   ['Hats_gorro3', Hats_gorro3],
   ['Hats_gorro4', Hats_gorro4],
-  ['Hats_gorro5', Hats_gorro5]
+  ['Hats_gorro5', Hats_gorro5],
+  ['Masks_mask_party',Masks_mask_party],
+  ['Masks_mask1',Masks_mask1],
+  ['Masks_mask2',Masks_mask2]
 ])

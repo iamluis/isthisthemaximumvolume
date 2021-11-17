@@ -380,6 +380,42 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'masks',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'mask_party',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'Masks_mask_party',
+      },
+      {
+        id: 'mask1',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Masks_mask1',
+      },
+      {
+        id: 'mask2',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Masks_mask2',
+      }
+    ],
+  },
+  {
     id: 'brazil',
     explanation: 'Vuvuzela!',
     images: [
