@@ -3,6 +3,13 @@ import ChopsticksGlases from '../../public/chopsticks/glases.jpeg'
 import ChopssticksPolaroid from '../../public/chopsticks/polaroid.jpeg'
 import GRBoat2cuties from '../../public/GRBoat/2cuties.jpeg'
 import GRBoat3cuties from '../../public/GRBoat/3cuties.jpeg'
+import GRBoatdiving from '../../public/GRBoat/diving.jpeg'
+import GRBoatmodel from '../../public/GRBoat/model_almpanidou.jpeg'
+import GRPhiriplaka3crazies from '../../public/GRPhiriplaka/3crazies.jpeg'
+import GRPhiriplaka4hot from '../../public/GRPhiriplaka/4hot.jpeg'
+import GRPhiriplakahats from '../../public/GRPhiriplaka/3crazies.jpeg'
+import GRPhiriplakamermade from '../../public/GRPhiriplaka/mermade.jpeg'
+
 
 /**
  *  x: zero = left of screen | either px or % to px max 1920
@@ -26,5 +33,11 @@ export const images: Map<string, StaticImageData> = new Map([
   ['ChopsticksCouch', ChopsticksCouch],
   ['ChopssticksPolaroid', ChopssticksPolaroid],
   ['GRBoat2cuties', GRBoat2cuties],
-  ['GRBoat3cuties', GRBoat3cuties]
+  ['GRBoat3cuties', GRBoat3cuties],
+  ['GRBoatdiving', GRBoatdiving],
+  ['GRBoatmodel', GRBoatmodel],
+  ['GRPhiriplaza3crazies', GRPhiriplaka3crazies],
+  ['GRPhiriplaza4hot',GRPhiriplaka4hot],
+  ['GRPhiriplazahats',GRPhiriplakahats],
+  ['GRPhiriplazamermade',GRPhiriplakamermade]
 ])

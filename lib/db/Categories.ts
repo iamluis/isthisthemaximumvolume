@@ -51,6 +51,72 @@ const categories: Category[] = [
         rotation: 0,
         url: 'GRBoat3cuties',
       },
+      {
+        id: 'diving',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRBoatdiving',
+      },
+      {
+        id: 'model',
+        position: {
+          x: '10%',
+          y: '50%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRBoatmodel',
+      }
+    ],
+  },
+  {
+    id: 'greece_phiri',
+    explanation: 'Wow',
+    images: [
+      {
+        id: '3crazy',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'GRPhiriplaka3crazies',
+      },
+      {
+        id: '4hot',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRPhiriplaka4hot',
+      },
+      {
+        id: 'hats',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRPhiriplakahats',
+      },
+      {
+        id: 'mermade',
+        position: {
+          x: '10%',
+          y: '50%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRPhiriplakamermade',
+      }
     ],
   },
   {
