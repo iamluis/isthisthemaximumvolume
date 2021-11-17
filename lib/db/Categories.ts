@@ -416,6 +416,42 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'model',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'model',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'Model_model',
+      },
+      {
+        id: 'model1',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Model_model1',
+      },
+      {
+        id: 'model2',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Model_model2',
+      }
+    ],
+  },
+  {
     id: 'brazil',
     explanation: 'Vuvuzela!',
     images: [

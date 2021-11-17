@@ -35,7 +35,9 @@ import Hats_gorro5 from '../../public/hats/gorro5.jpeg'
 import Masks_mask_party from '../../public/Masks/mask_party.jpeg'
 import Masks_mask1 from '../../public/Masks/mask1.jpeg'
 import Masks_mask2 from '../../public/Masks/mask2.jpeg'
-
+import Model_model from '../../public/model/model.jpeg'
+import Model_model1 from '../../public/model/model1.jpeg'
+import Model_model2 from '../../public/model/model2.jpeg'
 /**
  *  x: zero = left of screen | either px or % to px max 1920
  *  y: zero = top of screen | either px or % to px max 1080
@@ -90,5 +92,8 @@ export const images: Map<string, StaticImageData> = new Map([
   ['Hats_gorro5', Hats_gorro5],
   ['Masks_mask_party',Masks_mask_party],
   ['Masks_mask1',Masks_mask1],
-  ['Masks_mask2',Masks_mask2]
+  ['Masks_mask2',Masks_mask2],
+  ['Model_model',Model_model],
+  ['Model_model1',Model_model1],
+  ['Model_model2',Model_model2]
 ])
