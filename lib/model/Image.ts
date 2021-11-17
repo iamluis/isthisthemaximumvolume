@@ -4,7 +4,7 @@ import ChopsticksPolaroid from '../../public/chopsticks/polaroid.jpeg'
 import Cleaning_carton from '../../public/cleaning/carton.jpeg'
 import Cleaning_dreft from '../../public/cleaning/dreft.jpeg'
 import Cleaning_rollo from '../../public/cleaning/rollo.jpeg'
-import Coloc_cena from '../../public/coloc/cleaning.jpeg'
+import Coloc_cena from '../../public/coloc/cena.jpeg'
 import Coloc_funeral from '../../public/coloc/funeral.jpeg'
 import Coloc_hallerbos from '../../public/coloc/hallerbos.jpeg'
 import Coloc_piercing from '../../public/coloc/piercing.jpeg'
@@ -24,11 +24,9 @@ import GRBoat2cuties from '../../public/GRBoat/2cuties.jpeg'
 import GRBoat3cuties from '../../public/GRBoat/3cuties.jpeg'
 import GRBoatdiving from '../../public/GRBoat/diving.jpeg'
 import GRBoatmodel from '../../public/GRBoat/model_almpanidou.jpeg'
-import {
-  default as GRPhiriplaka3crazies,
-  default as GRPhiriplakahats,
-} from '../../public/GRPhiriplaka/3crazies.jpeg'
+import GRPhiriplaka3crazies from '../../public/GRPhiriplaka/3crazies.jpeg'
 import GRPhiriplaka4hot from '../../public/GRPhiriplaka/4hot.jpeg'
+import GRPhiriplakahats from '../../public/GRPhiriplaka/hats.jpeg'
 import GRPhiriplakamermade from '../../public/GRPhiriplaka/mermade.jpeg'
 import Hats_gorro1 from '../../public/hats/gorro1.jpeg'
 import Hats_gorro2 from '../../public/hats/gorro2.jpeg'
@@ -73,10 +71,10 @@ export const images: Map<string, StaticImageData> = new Map([
   ['GRBoat3cuties', GRBoat3cuties],
   ['GRBoatdiving', GRBoatdiving],
   ['GRBoatmodel', GRBoatmodel],
-  ['GRPhiriplaza3crazies', GRPhiriplaka3crazies],
-  ['GRPhiriplaza4hot', GRPhiriplaka4hot],
-  ['GRPhiriplazahats', GRPhiriplakahats],
-  ['GRPhiriplazamermade', GRPhiriplakamermade],
+  ['GRPhiriplaka3crazies', GRPhiriplaka3crazies],
+  ['GRPhiriplaka4hot', GRPhiriplaka4hot],
+  ['GRPhiriplakahats', GRPhiriplakahats],
+  ['GRPhiriplakamermade', GRPhiriplakamermade],
   ['Foodburger', Foodburger],
   ['Foodcake', Foodcake],
   ['Foodhanoi', Foodhanoi],
@@ -93,7 +91,7 @@ export const images: Map<string, StaticImageData> = new Map([
   ['Coloc_stairs', Coloc_stairs],
   ['Coloc_hallerbos', Coloc_hallerbos],
   ['Crazy_letsgoshopping', Crazy_letsgoshopping],
-  ['Crazy_noestabie', Crazy_noestabien],
+  ['Crazy_noestabien', Crazy_noestabien],
   ['Crazy_on_the_car', Crazy_on_the_car],
   ['Crazy_posing_statue', Crazy_posing_statue],
   ['Crazy_yoda', Crazy_yoda],

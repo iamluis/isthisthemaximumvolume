@@ -70,7 +70,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'GRBoatmodel',
-      }
+      },
     ],
   },
   {
@@ -116,7 +116,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'GRBoatmodel',
-      }
+      },
     ],
   },
   {
@@ -162,7 +162,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'GRPhiriplakamermade',
-      }
+      },
     ],
   },
   {
@@ -198,7 +198,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Cleaning_rollo',
-      }
+      },
     ],
   },
   {
@@ -274,7 +274,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Coloc_hallerbos',
-      }
+      },
     ],
   },
   {
@@ -330,7 +330,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Crazy_yoda',
-      }
+      },
     ],
   },
   {
@@ -386,7 +386,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Hats_gorro5',
-      }
+      },
     ],
   },
   {
@@ -442,7 +442,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Foodpanellets',
-      }
+      },
     ],
   },
   {
@@ -498,7 +498,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Sofa_sofa_elena',
-      }
+      },
     ],
   },
   {
@@ -534,7 +534,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Masks_mask2',
-      }
+      },
     ],
   },
   {
@@ -570,54 +570,6 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Model_model2',
-      }
-    ],
-  },
-  {
-    id: 'brazil',
-    explanation: 'Vuvuzela!',
-    images: [
-      {
-        id: 'hamilton',
-        position: {
-          x: '60%',
-          y: '30%',
-        },
-        width: '500px',
-        rotation: 20,
-        url: 'ChopsticksCouch',
-      },
-    ],
-  },
-  {
-    id: 'monaco',
-    explanation: 'Moneyzzzz',
-    images: [
-      {
-        id: 'vettel',
-        position: {
-          x: '30%',
-          y: '50%',
-        },
-        width: '450px',
-        rotation: 0,
-        url: 'ChopsticksGlases',
-      },
-    ],
-  },
-  {
-    id: 'spain',
-    explanation: 'Free Catalonia',
-    images: [
-      {
-        id: 'alonso',
-        position: {
-          x: '30%',
-          y: '30%',
-        },
-        width: '700px',
-        rotation: 170,
-        url: 'ChopsticksCouch',
       },
     ],
   },
