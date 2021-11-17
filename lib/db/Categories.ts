@@ -218,6 +218,16 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Coloc_stairs',
+      },
+      {
+        id: 'hallerbos',
+        position: {
+          x: '50%',
+          y: '50%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Coloc_hallerbos',
       }
     ],
   },
@@ -376,6 +386,16 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Foodvagelis',
+      },
+      {
+        id: 'panellets',
+        position: {
+          x: '10%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Foodpanellets',
       }
     ],
   },

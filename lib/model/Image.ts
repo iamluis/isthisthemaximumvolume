@@ -13,6 +13,7 @@ import Foodburger from '../../public/Food/burger.jpeg'
 import Foodcake from '../../public/Food/cakeee.jpeg'
 import Foodhanoi from '../../public/Food/hanoi.jpeg'
 import Foodvagelis from '../../public/Food/vagelis.jpeg'
+import Foodpanellets from '../../public/Food/panellets.jpeg'
 import Cleaning_carton from '../../public/cleaning/carton.jpeg'
 import Cleaning_dreft from '../../public/cleaning/dreft.jpeg'
 import Cleaning_rollo from '../../public/cleaning/rollo.jpeg'
@@ -22,6 +23,7 @@ import Coloc_piercing from '../../public/coloc/piercing.jpeg'
 import Coloc_shirts from '../../public/coloc/shirts.jpeg'
 import Coloc_snow from '../../public/coloc/snow.jpeg'
 import Coloc_stairs from '../../public/coloc/stairs.jpeg'
+import Coloc_hallerbos from '../../public/coloc/hallerbos.jpeg'
 import Crazy_letsgoshopping from '../../public/crazy/letsgoshopping.jpeg'
 import Crazy_noestabien from '../../public/crazy/noestabien.jpeg'
 import Crazy_on_the_car from '../../public/crazy/on_the_car.jpeg'
@@ -76,6 +78,7 @@ export const images: Map<string, StaticImageData> = new Map([
   ['Foodcake',Foodcake],
   ['Foodhanoi',Foodhanoi],
   ['Foodvagelis',Foodvagelis],
+  ['Foodpanellets',Foodpanellets],
   ['Cleaning_dreft',Cleaning_dreft],
   ['Cleaning_rollo',Cleaning_rollo],
   ['Cleaning_carton',Cleaning_carton],
@@ -85,6 +88,7 @@ export const images: Map<string, StaticImageData> = new Map([
   ['Coloc_shirts',Coloc_shirts],
   ['Coloc_snow',Coloc_snow],
   ['Coloc_stairs',Coloc_stairs],
+  ['Coloc_hallerbos',Coloc_hallerbos],
   ['Crazy_letsgoshopping',Crazy_letsgoshopping],
   ['Crazy_noestabie',Crazy_noestabien],
   ['Crazy_on_the_car',Crazy_on_the_car],
