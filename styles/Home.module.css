@@ -2,9 +2,8 @@
   width: 100vw;
   height: 100vh;
   padding: 4em;
-  color: rgba(255, 255, 255, 0.75);
   font-family: 'Anonymous Pro', monospace;
-  background-color: rgb(25, 25, 25);
+  background-color: #7db0ca;
 }
 
 /* Google Fonts */
@@ -15,12 +14,41 @@
   top: 50%;
   width: 12em;
   margin: 0 auto;
+  color: rgba(255, 255, 255, 0.75);
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   font-size: 180%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
+}
+
+.button {
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 50px;
+  background: #7db0ca;
+  box-shadow: 20px 20px 60px #6a96ac, -20px -20px 60px #90cae8;
+  width: 190px;
+}
+
+.left {
+  position: relative;
+  top: 55%;
+  left: 35%;
+}
+
+.right {
+  position: relative;
+  top: 55%;
+  left: 45%;
+}
+
+.button:hover {
+  border-radius: 50px;
+  background: #7db0ca;
+  box-shadow: inset 20px 20px 60px #6a96ac, inset -20px -20px 60px #90cae8;
+  transform: scale(0.98);
 }
 
 /* Animation */

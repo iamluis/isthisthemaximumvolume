@@ -16,12 +16,12 @@ const Home: NextPage = () => {
       <p className={`${styles.line1} ${styles.animTypewriter}`}>
         Happy Birthday Alex!
       </p>
-      <span className={`${styles.button} ${styles.left}`}>
+      <div className={`${styles.button} ${styles.left}`}>
         <Link href="story/greece">Give me photos!</Link>
-      </span>
-      <span className={`${styles.button} ${styles.right}`}>
+      </div>
+      <div className={`${styles.button} ${styles.right}`}>
         <Link href="music">Give me music!</Link>
-      </span>
+      </div>
     </div>
   )
 }
