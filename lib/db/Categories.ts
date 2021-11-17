@@ -120,6 +120,42 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'Cleaning',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'carton',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'Cleaning_carton',
+      },
+      {
+        id: 'dreft',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Cleaning_dreft',
+      },
+      {
+        id: 'rollo',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Cleaning_rollo',
+      }
+    ],
+  },
+  {
     id: 'food',
     explanation: 'Wow',
     images: [
