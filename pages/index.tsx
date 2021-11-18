@@ -13,19 +13,27 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Konfettikanone launch={true}></Konfettikanone>
-      <p className={`${styles.line1} ${styles.animTypewriter}`}>
-        Happy Birthday Alexy!
-      </p>
-      <Link href="/story/greece_boat" passHref>
-        <span className={`${styles.button} ${styles.left}`}>
-          Give me photos!
-        </span>
-      </Link>
-      <Link href="music" passHref>
-        <span className={`${styles.button} ${styles.right}`}>
-          Give me music!
-        </span>
-      </Link>
+      <div className={styles.content}>
+        <p className={`${styles.line1} ${styles.animTypewriter}`}>
+          Happy Birthday Alexy!
+        </p>
+        <div className={styles.links}>
+          <div>
+            <Link href="/story/greece_boat" passHref>
+              <span className={`${styles.button} ${styles.left}`}>
+                Give me photos!
+              </span>
+            </Link>
+          </div>
+          <div>
+            <Link href="music" passHref>
+              <span className={`${styles.button} ${styles.right}`}>
+                Give me music!
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
