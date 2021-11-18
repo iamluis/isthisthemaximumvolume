@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <Konfettikanone launch={true}></Konfettikanone>
       <p className={`${styles.line1} ${styles.animTypewriter}`}>
-        Happy Birthday Alex!
+        Happy Birthday Alexy!
       </p>
       <Link href="/story/greece" passHref>
         <span className={`${styles.button} ${styles.left}`}>
