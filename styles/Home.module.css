@@ -31,6 +31,8 @@
   display: flex;
   justify-content: space-evenly;
   width: 50%;
+  height: 100px;
+  transform: translate(-60px, 0px);
 }
 
 /* Google Fonts */

@@ -20,7 +20,7 @@
 
 .categories {
   left: 50%;
-  height: 50px;
+  height: 70px;
   width: fit-content;
   min-width: 200px;
   background-color: #fff;
@@ -34,7 +34,8 @@
 }
 
 .categoryText {
-  padding: 10px;
+  font-size: 26px;
+  padding: 20px;
 }
 
 /* // Background Blur using backdrop-filter */

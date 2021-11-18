@@ -20,6 +20,7 @@ import Foodburger from '../../public/Food/burger.jpeg'
 import Foodcake from '../../public/Food/cakeee.jpeg'
 import Foodhanoi from '../../public/Food/hanoi.jpeg'
 import Foodpanellets from '../../public/Food/panellets.jpeg'
+import FoodVagelis from '../../public/Food/vagelis.jpg'
 import GRBoat2cuties from '../../public/GRBoat/2cuties.jpeg'
 import GRBoat3cuties from '../../public/GRBoat/3cuties.jpeg'
 import GRBoatdiving from '../../public/GRBoat/diving.jpeg'
@@ -100,7 +101,7 @@ export const images: Map<string, StaticImageData> = new Map([
   ['Foodburger', Foodburger],
   ['Foodcake', Foodcake],
   ['Foodhanoi', Foodhanoi],
-  ['Foodvagelis', Foodhanoi],
+  ['Foodvagelis', FoodVagelis],
   ['Foodpanellets', Foodpanellets],
   ['Cleaning_dreft', Cleaning_dreft],
   ['Cleaning_rollo', Cleaning_rollo],

@@ -86,7 +86,7 @@ const chopsticks: Category = {
 
 const greece_phiri: Category = {
   id: 'greece_phiri',
-  explanation: 'The one with the best parking skills.',
+  explanation: 'The one with the bluest water.',
   images: [
     {
       id: '',
@@ -133,7 +133,7 @@ const greece_phiri: Category = {
 
 const general = {
   id: 'GRGen',
-  explanation: 'The one where they fell in love.',
+  explanation: 'The one with the Fredo Cappuccinos.',
   images: [
     {
       id: '',
@@ -200,7 +200,7 @@ const general = {
 
 const sunset: Category = {
   id: 'GRSunset',
-  explanation: 'The one with the sunset.',
+  explanation: 'The one with the sunsets.',
   images: [
     {
       id: 'Not worth it',
@@ -267,7 +267,7 @@ const sunset: Category = {
 
 const cleaning: Category = {
   id: 'Cleaning',
-  explanation: 'The one where Alex is in love with the Dyson.',
+  explanation: 'The one where Alex is in love with cleaning.',
   images: [
     {
       id: 'What is your favorite activity?',
@@ -290,7 +290,7 @@ const cleaning: Category = {
       url: 'Cleaning_dreft',
     },
     {
-      id: 'Mother of toilet paper',
+      id: `I'm a mummy.`,
       position: {
         x: '20%',
         y: '50%',
@@ -304,7 +304,7 @@ const cleaning: Category = {
 
 const coloc: Category = {
   id: 'Coloc',
-  explanation: 'The one in the house.',
+  explanation: 'The one with Roosevelt 16 & Co.™',
   images: [
     {
       id: 'fiiiiiiiish dinner',
@@ -381,7 +381,7 @@ const coloc: Category = {
 
 const crazy: Category = {
   id: 'Crazy',
-  explanation: 'The one where she is crazy.',
+  explanation: 'The one where she is creepy cutie.',
   images: [
     {
       id: '',
@@ -404,7 +404,7 @@ const crazy: Category = {
       url: 'Crazy_noestabien',
     },
     {
-      id: '',
+      id: 'Our Superwoman!',
       position: {
         x: '65%',
         y: '50%',
@@ -414,7 +414,7 @@ const crazy: Category = {
       url: 'Crazy_on_the_car',
     },
     {
-      id: 'posing_statue',
+      id: 'I am so amazing',
       position: {
         x: '18%',
         y: '72%',
@@ -441,7 +441,7 @@ const hats: Category = {
   explanation: 'The one with the hats.',
   images: [
     {
-      id: 'Creepy cutie',
+      id: 'The original Creepy cutie',
       position: {
         x: '52%',
         y: '40%',
@@ -471,7 +471,7 @@ const hats: Category = {
       url: 'Hats_gorro3',
     },
     {
-      id: 'gorro4',
+      id: '',
       position: {
         x: '30%',
         y: '70%',
@@ -481,7 +481,7 @@ const hats: Category = {
       url: 'Hats_gorro4',
     },
     {
-      id: 'gorro5',
+      id: '',
       position: {
         x: '80%',
         y: '20%',
@@ -603,14 +603,14 @@ const sofas: Category = {
       url: 'Sofa_sofa_outside',
     },
     {
-      id: 'Two_bitches',
+      id: 'Two Bs',
       position: {
         x: '50%',
         y: '70%',
       },
       width: '30%',
       rotation: 0,
-      url: 'Sofa_sofa_elena',
+      url: 'Sofa_Two_bitches',
     },
   ],
 }
@@ -655,17 +655,17 @@ const model: Category = {
   explanation: 'The one where even a fashion runway is not enough.',
   images: [
     {
-      id: 'model',
+      id: '',
       position: {
         x: '20%',
-        y: '30%',
+        y: '65%',
       },
       width: '40%',
       rotation: 10,
       url: 'Model_model',
     },
     {
-      id: 'model1',
+      id: 'GNTM',
       position: {
         x: '55%',
         y: '50%',
@@ -675,17 +675,17 @@ const model: Category = {
       url: 'Model_model1',
     },
     {
-      id: 'model2',
+      id: `Bieber doesn't know what he is missing.`,
       position: {
         x: '25%',
-        y: '75%',
+        y: '20%',
       },
       width: '25%',
       rotation: -5,
       url: 'Model_model2',
     },
     {
-      id: '',
+      id: 'Hold On',
       position: {
         x: '83%',
         y: '50%',
