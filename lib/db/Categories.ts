@@ -2,37 +2,21 @@ import Category from '../model/Category'
 
 const categories: Category[] = [
   {
-    id: 'greece',
-    explanation: 'Wow',
-    images: [
-      {
-        id: 'More noice',
-        position: {
-          x: '70%',
-          y: '40%',
-        },
-        width: '500px',
-        rotation: 10,
-        url: 'ChopsticksGlases',
-      },
-      {
-        id: 'Noice',
-        position: {
-          x: '0%',
-          y: '30%',
-        },
-        width: '800px',
-        rotation: -10,
-        url: 'ChopsticksCouch',
-      },
-    ],
-  },
-  {
     id: 'greece_boat',
     explanation: 'Wow',
     images: [
       {
-        id: 'Still noice',
+        id: '',
+        position: {
+          x: '30%',
+          y: '20%',
+        },
+        width: '800px',
+        rotation: -10,
+        url: 'GRBoat3cuties',
+      },
+      {
+        id: 'Paradise',
         position: {
           x: '70%',
           y: '40%',
@@ -42,33 +26,23 @@ const categories: Category[] = [
         url: 'GRBoat2cuties',
       },
       {
-        id: '3cuties',
+        id: '',
         position: {
-          x: '50%',
-          y: '30%',
+          x: '40%',
+          y: '70%',
         },
-        width: '300px',
-        rotation: 0,
-        url: 'GRBoat3cuties',
-      },
-      {
-        id: 'diving',
-        position: {
-          x: '30%',
-          y: '80%',
-        },
-        width: '300px',
-        rotation: 0,
+        width: '400px',
+        rotation: -10,
         url: 'GRBoatdiving',
       },
       {
-        id: 'model',
+        id: '',
         position: {
-          x: '10%',
-          y: '50%',
+          x: '20%',
+          y: '70%',
         },
-        width: '500px',
-        rotation: 0,
+        width: '400px',
+        rotation: 10,
         url: 'GRBoatmodel',
       },
     ],
@@ -78,45 +52,35 @@ const categories: Category[] = [
     explanation: 'Wow',
     images: [
       {
-        id: 'Blurry but stylish',
+        id: '',
         position: {
-          x: '70%',
-          y: '40%',
+          x: '50%',
+          y: '50%',
         },
-        width: '800px',
+        width: '600px',
         rotation: 10,
         url: 'ChopsticksCuties',
       },
       {
-        id: 'glases',
+        id: '',
         position: {
-          x: '50%',
-          y: '30%',
+          x: '80%',
+          y: '50%',
         },
-        width: '300px',
-        rotation: 0,
+        width: '500px',
+        rotation: -10,
         url: 'ChopsticksGlases',
       },
       {
-        id: 'polaroid',
+        id: 'My baby',
         position: {
-          x: '30%',
+          x: '20%',
           y: '50%',
         },
-        width: '300px',
-        rotation: 0,
+        width: '450px',
+        rotation: -5,
         url: 'ChopsticksPolaroid',
-      },
-      {
-        id: 'model',
-        position: {
-          x: '10%',
-          y: '50%',
-        },
-        width: '300px',
-        rotation: 0,
-        url: 'GRBoatmodel',
-      },
+      }
     ],
   },
   {
@@ -124,44 +88,176 @@ const categories: Category[] = [
     explanation: 'Wow',
     images: [
       {
-        id: '3crazy',
+        id: 'The only photo Yannis took properly',
+        position: {
+          x: '72%',
+          y: '35%',
+        },
+        width: '700px',
+        rotation: 10,
+        url: 'GRPhiriplaka3crazies',
+      },
+      {
+        id: '',
+        position: {
+          x: '20%',
+          y: '70%',
+        },
+        width: '500px',
+        rotation: 0,
+        url: 'GRPhiriplakamermade',
+      },
+      {
+        id: 'Phiriplaka',
+        position: {
+          x: '30%',
+          y: '30%',
+        },
+        width: '700px',
+        rotation: -10,
+        url: 'GRPhiriplaka4hot',
+      },
+      {
+        id: '',
+        position: {
+          x: '60%',
+          y: '80%',
+        },
+        width: '600px',
+        rotation: 0,
+        url: 'GRPhiriplakahats',
+      }
+    ],
+  },
+  {
+    id: 'GRGen',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'Best pic of the trip',
         position: {
           x: '70%',
           y: '40%',
         },
         width: '800px',
         rotation: 10,
-        url: 'GRPhiriplaka3crazies',
+        url: 'GRGen_3_in_the_boat',
       },
       {
-        id: '4hot',
+        id: '',
         position: {
           x: '50%',
           y: '30%',
         },
         width: '300px',
         rotation: 0,
-        url: 'GRPhiriplaka4hot',
+        url: 'GRGen_greece_general1',
       },
       {
-        id: 'hats',
+        id: 'Greek gods',
         position: {
           x: '30%',
           y: '80%',
         },
         width: '300px',
         rotation: 0,
-        url: 'GRPhiriplakahats',
+        url: 'GRGen_greek_gods',
       },
       {
-        id: 'mermade',
+        id: '',
         position: {
           x: '10%',
-          y: '50%',
+          y: '90%',
         },
         width: '300px',
         rotation: 0,
-        url: 'GRPhiriplakamermade',
+        url: 'GRGen_more_greece',
+      },
+      {
+        id: '',
+        position: {
+          x: '90%',
+          y: '10%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRGen_selfie_in_greece',
+      },
+      {
+        id: 'Covid test for Chrystovalandos',
+        position: {
+          x: '80%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRGen_sofas',
+      },
+    ],
+  },
+  {
+    id: 'GRSunset',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'Not worth it',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'GRSunset_not_worth_it',
+      },
+      {
+        id: '',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset_boat',
+      },
+      {
+        id: '',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset_in_lov',
+      },
+      {
+        id: '',
+        position: {
+          x: '10%',
+          y: '90%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset1',
+      },
+      {
+        id: '',
+        position: {
+          x: '90%',
+          y: '10%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset2',
+      },
+      {
+        id: '',
+        position: {
+          x: '80%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset3',
       },
     ],
   },
@@ -490,6 +586,16 @@ const categories: Category[] = [
         url: 'Sofa_sofa_elena',
       },
       {
+        id: '',
+        position: {
+          x: '30%',
+          y: '50%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Sofa_sofa_outside',
+      },
+      {
         id: 'Two_bitches',
         position: {
           x: '10%',
@@ -571,8 +677,74 @@ const categories: Category[] = [
         rotation: 0,
         url: 'Model_model2',
       },
+      {
+        id: '',
+        position: {
+          x: '50%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Model_super_model',
+      },
     ],
   },
+  {
+    id: 'Selfies',
+    explanation: 'Wow',
+    images: [
+      {
+        id: '',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'Selfie_colacao',
+      },
+      {
+        id: '',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Selfie_infusiones',
+      },
+      {
+        id: '',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Selfie_rabit',
+      },
+      {
+        id: '',
+        position: {
+          x: '50%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Selfie_selfie1',
+      },
+      {
+        id: '',
+        position: {
+          x: '50%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Selfie_selfie1',
+      },
+    ],
+  }
 ]
 
 export default categories

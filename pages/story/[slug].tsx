@@ -29,11 +29,11 @@ const StoryPage: NextPage<{
       <div className={styles.background}>
         <div className={styles.blur}></div>
         <div className={styles.box}>
-          {category.images.map((image) => {
+          {category.images.map((image,i) => {
             return (
               <Polaroid
                 alt={image.id}
-                key={image.id}
+                key={i}
                 width={image.width}
                 rotation={image.rotation}
                 top={image.position.y}
