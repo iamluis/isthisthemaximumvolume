@@ -1,0 +1,20 @@
+.container {
+  height: 100%;
+  width: 100%;
+  font-family: 'Anonymous Pro', monospace;
+  background-color: var(--background-color);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+}
+
+.video {
+  padding: 20px;
+}
