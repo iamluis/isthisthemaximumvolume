@@ -1,0 +1,92 @@
+.container {
+  height: 100vh;
+  font-family: 'Anonymous Pro', monospace;
+  overflow: hidden;
+}
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* // Content we're putting a blur over */
+.background {
+  background-image: url('../public/background.jpeg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.categories {
+  left: 50%;
+  height: 70px;
+  width: fit-content;
+  min-width: 200px;
+  background-color: #fff;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryText {
+  font-size: 26px;
+  padding: 20px;
+}
+
+/* // Background Blur using backdrop-filter */
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.slider {
+  width: 95%;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  padding: 10px 25px;
+  margin: 0px;
+  font-size: 26px;
+  color: #fff;
+}
+
+.trackContainer {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.coloredTrack {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom right,
+    transparent 40%,
+    white 60%
+  );
+  background-repeat: no-repeat;
+  background-position: left, right;
+}
