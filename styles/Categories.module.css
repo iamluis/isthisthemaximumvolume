@@ -37,9 +37,36 @@
 }
 
 .slider {
-  width: 90%;
+  width: 95%;
   position: absolute;
-  top: 95%;
+  bottom: 15px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  padding: 10px 25px;
+  margin: 0px;
+  font-size: 26px;
+  color: #fff;
+}
+
+.trackContainer {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.coloredTrack {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom right,
+    transparent 40%,
+    white 60%
+  );
+  background-repeat: no-repeat;
+  background-position: left, right;
 }

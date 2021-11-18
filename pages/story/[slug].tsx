@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { Range } from 'react-range'
+import { getTrackBackground, Range } from 'react-range'
 import Polaroid from '../../components/polaroid/Polaroid'
 import { getCategoryIds } from '../../lib/api/getCategories'
 import { getCategoryBySlug } from '../../lib/api/getCategoryBySlug'
@@ -15,7 +15,8 @@ const StoryPage: NextPage<{
   ids: string[]
 }> = ({ category, size, idx, ids }) => {
   const router = useRouter()
-
+  const min = 0
+  const max = size - 1
   return (
     <div className={styles.container}>
       <Head>
@@ -29,7 +30,7 @@ const StoryPage: NextPage<{
       <div className={styles.background}>
         <div className={styles.blur}></div>
         <div className={styles.box}>
-          {category.images.map((image,i) => {
+          {category.images.map((image, i) => {
             return (
               <Polaroid
                 alt={image.id}
@@ -43,38 +44,76 @@ const StoryPage: NextPage<{
             )
           })}
           <div className={styles.slider}>
+            <span className={styles.label}>min</span>
+
             <Range
-              min={0}
-              max={size - 1}
+              min={min}
+              max={max}
               values={[idx]}
               onChange={([newIdx]) => {
                 router.push('/story/' + ids[newIdx])
               }}
-              renderTrack={({ props, children }) => (
+              renderMark={({ props, index }) => (
                 <div
                   {...props}
                   style={{
                     ...props.style,
-                    height: '6px',
-                    width: '100%',
-                    backgroundColor: '#fff',
+                    height: '10px',
+                    width: '10px',
+                    borderRadius: '10px',
+                    marginTop: '4px',
+                    backgroundColor: index < idx ? '#96cbf6' : '#fff',
                   }}
-                >
-                  {children}
-                </div>
+                />
               )}
+              renderTrack={({ props, children }) => {
+                return (
+                  <div
+                    onMouseDown={props.onMouseDown}
+                    onTouchStart={props.onTouchStart}
+                    style={{
+                      ...props.style,
+                      height: '36px',
+                      display: 'flex',
+                      width: '100%',
+                    }}
+                  >
+                    <div
+                      ref={props.ref}
+                      style={{
+                        height: '18px',
+                        width: '100%',
+                        borderRadius: '10px',
+                        background: getTrackBackground({
+                          values: [idx],
+                          colors: ['#ffffff', '#ccc'],
+                          min: min,
+                          max: max,
+                          rtl: false,
+                        }),
+                        alignSelf: 'center',
+                      }}
+                    >
+                      {children}
+                    </div>
+                  </div>
+                )
+              }}
               renderThumb={({ props }) => (
                 <div
                   {...props}
                   style={{
                     ...props.style,
-                    height: '42px',
-                    width: '42px',
-                    backgroundColor: '#fff',
+                    height: '50px',
+                    width: '20px',
+                    borderRadius: '20px',
+                    backgroundColor: '#1680d6',
+                    border: '5px solid #fff',
                   }}
                 />
               )}
             />
+            <span className={styles.label}>max</span>
           </div>
         </div>
       </div>

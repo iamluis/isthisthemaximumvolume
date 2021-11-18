@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <p className={`${styles.line1} ${styles.animTypewriter}`}>
         Happy Birthday Alexy!
       </p>
-      <Link href="/story/greece" passHref>
+      <Link href="/story/greece_boat" passHref>
         <span className={`${styles.button} ${styles.left}`}>
           Give me photos!
         </span>
