@@ -67,7 +67,7 @@ const categories: Category[] = [
           x: '10%',
           y: '50%',
         },
-        width: '300px',
+        width: '500px',
         rotation: 0,
         url: 'GRBoatmodel',
       },

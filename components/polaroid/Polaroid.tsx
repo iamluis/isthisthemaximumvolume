@@ -17,7 +17,6 @@ const Polaroid: FunctionComponent<ImageProps> = (props) => {
   if (!image) {
     return null
   }
-  console.log({ props, width: image.width, height: image.height })
   return (
     <>
       <style jsx>
@@ -41,8 +40,7 @@ const Polaroid: FunctionComponent<ImageProps> = (props) => {
             alt={props.alt}
             title={props.alt}
             layout="responsive"
-            // contain fill cover
-            objectFit="scale-down"
+            objectFit="contain"
           ></Image>
         </a>
       </div>
