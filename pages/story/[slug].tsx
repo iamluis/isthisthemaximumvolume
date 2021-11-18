@@ -6,7 +6,7 @@ import Polaroid from '../../components/polaroid/Polaroid'
 import { getCategoryIds } from '../../lib/api/getCategories'
 import { getCategoryBySlug } from '../../lib/api/getCategoryBySlug'
 import Category from '../../lib/model/Category'
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/Categories.module.css'
 
 const StoryPage: NextPage<{
   category: Category

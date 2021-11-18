@@ -6,23 +6,23 @@ const categories: Category[] = [
     explanation: 'Wow',
     images: [
       {
-        id: 'vettel',
+        id: 'More noice',
         position: {
           x: '70%',
           y: '40%',
         },
-        width: '800px',
+        width: '500px',
         rotation: 10,
         url: 'ChopsticksGlases',
       },
       {
-        id: 'alonso',
+        id: 'Noice',
         position: {
-          x: '50%',
+          x: '0%',
           y: '30%',
         },
-        width: '300px',
-        rotation: 0,
+        width: '800px',
+        rotation: -10,
         url: 'ChopsticksCouch',
       },
     ],
@@ -32,7 +32,7 @@ const categories: Category[] = [
     explanation: 'Wow',
     images: [
       {
-        id: '2cuties',
+        id: 'Still noice',
         position: {
           x: '70%',
           y: '40%',
@@ -67,10 +67,10 @@ const categories: Category[] = [
           x: '10%',
           y: '50%',
         },
-        width: '300px',
+        width: '500px',
         rotation: 0,
         url: 'GRBoatmodel',
-      }
+      },
     ],
   },
   {
@@ -78,7 +78,7 @@ const categories: Category[] = [
     explanation: 'Wow',
     images: [
       {
-        id: 'cuties',
+        id: 'Blurry but stylish',
         position: {
           x: '70%',
           y: '40%',
@@ -101,7 +101,7 @@ const categories: Category[] = [
         id: 'polaroid',
         position: {
           x: '30%',
-          y: '80%',
+          y: '50%',
         },
         width: '300px',
         rotation: 0,
@@ -116,7 +116,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'GRBoatmodel',
-      }
+      },
     ],
   },
   {
@@ -162,7 +162,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'GRPhiriplakamermade',
-      }
+      },
     ],
   },
   {
@@ -228,7 +228,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'GRGen_sofas',
-      }
+      },
     ],
   },
   {
@@ -294,7 +294,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'GRSunset_sunset3',
-      }
+      },
     ],
   },
   {
@@ -330,7 +330,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Cleaning_rollo',
-      }
+      },
     ],
   },
   {
@@ -361,7 +361,7 @@ const categories: Category[] = [
         id: 'piercing',
         position: {
           x: '30%',
-          y: '80%',
+          y: '60%',
         },
         width: '300px',
         rotation: 0,
@@ -371,7 +371,7 @@ const categories: Category[] = [
         id: 'shirts',
         position: {
           x: '10%',
-          y: '90%',
+          y: '50%',
         },
         width: '300px',
         rotation: 0,
@@ -380,7 +380,7 @@ const categories: Category[] = [
       {
         id: 'snow',
         position: {
-          x: '90%',
+          x: '30%',
           y: '10%',
         },
         width: '300px',
@@ -391,7 +391,7 @@ const categories: Category[] = [
         id: 'stairs',
         position: {
           x: '80%',
-          y: '30%',
+          y: '10%',
         },
         width: '300px',
         rotation: 0,
@@ -401,12 +401,12 @@ const categories: Category[] = [
         id: 'hallerbos',
         position: {
           x: '50%',
-          y: '50%',
+          y: '30%',
         },
         width: '300px',
         rotation: 0,
         url: 'Coloc_hallerbos',
-      }
+      },
     ],
   },
   {
@@ -462,7 +462,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Crazy_yoda',
-      }
+      },
     ],
   },
   {
@@ -518,7 +518,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Hats_gorro5',
-      }
+      },
     ],
   },
   {
@@ -574,7 +574,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Foodpanellets',
-      }
+      },
     ],
   },
   {
@@ -640,7 +640,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Sofa_sofa_elena',
-      }
+      },
     ],
   },
   {
@@ -676,7 +676,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Masks_mask2',
-      }
+      },
     ],
   },
   {
@@ -722,7 +722,7 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Model_super_model',
-      }
+      },
     ],
   },
   {

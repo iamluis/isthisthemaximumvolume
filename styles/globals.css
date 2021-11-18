@@ -12,6 +12,12 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --background-color: #3eb0ea;
+  --shadow-up: 22px 22px 43px #2d80ab, -22px -22px 43px #4fe0ff;
+  --shadow-down: inset 22px 22px 43px #2d80ab, inset -22px -22px 43px #4fe0ff;
+}
+
 * {
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
