@@ -166,6 +166,138 @@ const categories: Category[] = [
     ],
   },
   {
+    id: 'GRGen',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'Best pic of the trip',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'GRGen_3_in_the_boat',
+      },
+      {
+        id: '',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRGen_greece_general1',
+      },
+      {
+        id: 'Greek gods',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRGen_greek_gods',
+      },
+      {
+        id: '',
+        position: {
+          x: '10%',
+          y: '90%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRGen_more_greece',
+      },
+      {
+        id: '',
+        position: {
+          x: '90%',
+          y: '10%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRGen_selfie_in_greece',
+      },
+      {
+        id: 'Covid test for Chrystovalandos',
+        position: {
+          x: '80%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRGen_sofas',
+      }
+    ],
+  },
+  {
+    id: 'GRSunset',
+    explanation: 'Wow',
+    images: [
+      {
+        id: 'Not worth it',
+        position: {
+          x: '70%',
+          y: '40%',
+        },
+        width: '800px',
+        rotation: 10,
+        url: 'GRSunset_not_worth_it',
+      },
+      {
+        id: '',
+        position: {
+          x: '50%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset_boat',
+      },
+      {
+        id: '',
+        position: {
+          x: '30%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset_in_lov',
+      },
+      {
+        id: '',
+        position: {
+          x: '10%',
+          y: '90%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset1',
+      },
+      {
+        id: '',
+        position: {
+          x: '90%',
+          y: '10%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset2',
+      },
+      {
+        id: '',
+        position: {
+          x: '80%',
+          y: '30%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'GRSunset_sunset3',
+      }
+    ],
+  },
+  {
     id: 'Cleaning',
     explanation: 'Wow',
     images: [
@@ -490,6 +622,16 @@ const categories: Category[] = [
         url: 'Sofa_sofa_elena',
       },
       {
+        id: '',
+        position: {
+          x: '30%',
+          y: '50%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Sofa_sofa_outside',
+      },
+      {
         id: 'Two_bitches',
         position: {
           x: '10%',
@@ -570,6 +712,16 @@ const categories: Category[] = [
         width: '300px',
         rotation: 0,
         url: 'Model_model2',
+      },
+      {
+        id: '',
+        position: {
+          x: '50%',
+          y: '80%',
+        },
+        width: '300px',
+        rotation: 0,
+        url: 'Model_super_model',
       }
     ],
   },
