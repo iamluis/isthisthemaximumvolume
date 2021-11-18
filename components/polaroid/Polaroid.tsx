@@ -35,6 +35,7 @@ const Polaroid: FunctionComponent<ImageProps> = (props) => {
       >
         <a href="#" title={props.alt}>
           <Image
+            placeholder="blur"
             priority
             src={image ?? ''}
             alt={props.alt}
