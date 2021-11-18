@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { getTrackBackground, Range } from 'react-range'
 import Polaroid from '../../components/polaroid/Polaroid'
@@ -119,6 +120,11 @@ const StoryPage: NextPage<{
             <span className={styles.categoryText}>
               {category.explanation ?? 'No catgory'}
             </span>
+          </div>
+          <div className={styles.home}>
+            <Link href="/" passHref>
+              Confetti!
+            </Link>
           </div>
         </div>
       </div>
