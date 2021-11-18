@@ -2,15 +2,14 @@
   width: 100vw;
   height: 100vh;
   font-family: 'Anonymous Pro', monospace;
-
-  background-image: url('../public/background.jpeg');
+  background-color: var(--background-color);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .container::after {
-  background-color: #7db0ca;
+  background-image: url('../public/background.jpeg');
   content: '';
   width: 100vw;
   height: 100vh;
@@ -26,7 +25,7 @@
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.75);
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
+  font-size: 400%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -37,28 +36,28 @@
   padding: 20px;
   color: rgba(255, 255, 255, 0.75);
   border-radius: 50px;
-  background: #7db0ca;
-  box-shadow: 20px 20px 60px #6a96ac, -20px -20px 60px #90cae8;
+  background: var(--background-color);
+  box-shadow: var(--shadow-up);
   width: 190px;
+  font-size: 1.5em;
+}
+
+.button:hover {
+  border-radius: 50px;
+  box-shadow: var(--shadow-down);
+  transform: scale(0.98);
 }
 
 .left {
   position: relative;
   top: 55%;
-  left: 35%;
+  left: 32%;
 }
 
 .right {
   position: relative;
   top: 55%;
-  left: 45%;
-}
-
-.button:hover {
-  border-radius: 50px;
-  background: #7db0ca;
-  box-shadow: inset 20px 20px 60px #6a96ac, inset -20px -20px 60px #90cae8;
-  transform: scale(0.98);
+  left: 42%;
 }
 
 /* Animation */
