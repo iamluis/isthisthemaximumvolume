@@ -115,6 +115,7 @@ const StoryPage: NextPage<{
             />
             <span className={styles.label}>max</span>
           </div>
+          <div className={styles.categories}><span className={styles.categoryText}>{category.explanation ?? 'No catgory'}</span></div>
         </div>
       </div>
     </div>

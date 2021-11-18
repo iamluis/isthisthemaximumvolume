@@ -18,6 +18,25 @@
   overflow: hidden;
 }
 
+.categories {
+  left: 50%;
+  height: 50px;
+  width: fit-content;
+  min-width: 200px;
+  background-color: #fff;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryText {
+  padding: 10px;
+}
+
 /* // Background Blur using backdrop-filter */
 .blur {
   background: rgba(255, 255, 255, 0.2);

@@ -2,7 +2,7 @@ import Category from '../model/Category'
 
 const greece_boat: Category = {
   id: 'greece_boat',
-  explanation: 'Wow',
+  explanation: 'The one with the boat "Chrystovalandos".',
   images: [
     {
       id: '',
@@ -49,7 +49,7 @@ const greece_boat: Category = {
 
 const chopsticks: Category = {
   id: 'chopsticks_party',
-  explanation: 'Wow',
+  explanation: 'The one with the chopsticks & Tequila.',
   images: [
     {
       id: 'cuties',
@@ -86,7 +86,7 @@ const chopsticks: Category = {
 
 const greece_phiri: Category = {
   id: 'greece_phiri',
-  explanation: 'Wow',
+  explanation: 'The one with the best parking skills.',
   images: [
     {
       id: '',
@@ -133,7 +133,7 @@ const greece_phiri: Category = {
 
 const general = {
   id: 'GRGen',
-  explanation: 'Wow',
+  explanation: 'The one where they fell in love.',
   images: [
     {
       id: '',
@@ -200,7 +200,7 @@ const general = {
 
 const sunset: Category = {
   id: 'GRSunset',
-  explanation: 'Wow',
+  explanation: 'The one with the sunset.',
   images: [
     {
       id: 'Not worth it',
@@ -267,7 +267,7 @@ const sunset: Category = {
 
 const cleaning: Category = {
   id: 'Cleaning',
-  explanation: 'Wow',
+  explanation: 'The one where Alex is in love with the Dyson.',
   images: [
     {
       id: 'What is your favorite activity?',
@@ -304,7 +304,7 @@ const cleaning: Category = {
 
 const coloc: Category = {
   id: 'Coloc',
-  explanation: 'Wow',
+  explanation: 'The one in the house.',
   images: [
     {
       id: 'fiiiiiiiish dinner',
@@ -381,7 +381,7 @@ const coloc: Category = {
 
 const crazy: Category = {
   id: 'Crazy',
-  explanation: 'Wow',
+  explanation: 'The one where she is crazy.',
   images: [
     {
       id: '',
@@ -438,7 +438,7 @@ const crazy: Category = {
 
 const hats: Category = {
   id: 'Hats',
-  explanation: 'Wow',
+  explanation: 'The one with the hats.',
   images: [
     {
       id: 'Creepy cutie',
@@ -494,7 +494,7 @@ const hats: Category = {
 }
 const food: Category = {
   id: 'food',
-  explanation: 'Wow',
+  explanation: 'The one where no burger is too much.',
   images: [
     {
       id: 'The biggest pleasure in life',
@@ -550,7 +550,7 @@ const food: Category = {
 }
 const sofas: Category = {
   id: 'sofas',
-  explanation: 'Wow',
+  explanation: 'The comfy one.',
   images: [
     {
       id: 'On ne change pas',
@@ -616,7 +616,7 @@ const sofas: Category = {
 }
 const masks: Category = {
   id: 'masks',
-  explanation: 'Wow',
+  explanation: 'The one with the masks.',
   images: [
     {
       id: 'Find your favorite coloc in this picture',
@@ -652,7 +652,7 @@ const masks: Category = {
 }
 const model: Category = {
   id: 'model',
-  explanation: 'Wow',
+  explanation: 'The one where even a fashion runway is not enough.',
   images: [
     {
       id: 'model',
@@ -698,7 +698,7 @@ const model: Category = {
 }
 const selfies: Category = {
   id: 'Selfies2',
-  explanation: 'Wow',
+  explanation: 'The one we love.',
   images: [
     {
       id: '',
