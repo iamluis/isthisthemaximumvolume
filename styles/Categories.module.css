@@ -1,6 +1,7 @@
 .container {
   height: 100vh;
   font-family: 'Anonymous Pro', monospace;
+  overflow: hidden;
 }
 
 /* Google Fonts */
@@ -14,6 +15,7 @@
   background-size: cover;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 /* // Background Blur using backdrop-filter */
@@ -22,6 +24,7 @@
   backdrop-filter: blur(8px);
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .box {
@@ -30,6 +33,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .slider {

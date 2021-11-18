@@ -1,3 +1,8 @@
+.imageHolder {
+  display: inline-block;
+  position: absolute;
+}
+
 .imageHolder a {
   background: #ffffff;
   display: block;
@@ -6,8 +11,8 @@
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 80ms ease-out;
+  //position: relative;
   z-index: 0;
-  position: relative;
 }
 
 .imageHolder a:after {
@@ -18,9 +23,9 @@
   position: relative;
 }
 
-.imageHolder img {
+/* .imageHolder img {
   display: block;
-}
+} */
 
 .imageHolder a:hover {
   transform: scale(1.3);

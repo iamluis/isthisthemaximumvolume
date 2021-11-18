@@ -101,7 +101,7 @@ const categories: Category[] = [
         id: 'polaroid',
         position: {
           x: '30%',
-          y: '80%',
+          y: '50%',
         },
         width: '300px',
         rotation: 0,
@@ -229,7 +229,7 @@ const categories: Category[] = [
         id: 'piercing',
         position: {
           x: '30%',
-          y: '80%',
+          y: '60%',
         },
         width: '300px',
         rotation: 0,
@@ -239,7 +239,7 @@ const categories: Category[] = [
         id: 'shirts',
         position: {
           x: '10%',
-          y: '90%',
+          y: '50%',
         },
         width: '300px',
         rotation: 0,
@@ -248,7 +248,7 @@ const categories: Category[] = [
       {
         id: 'snow',
         position: {
-          x: '90%',
+          x: '30%',
           y: '10%',
         },
         width: '300px',
@@ -259,7 +259,7 @@ const categories: Category[] = [
         id: 'stairs',
         position: {
           x: '80%',
-          y: '30%',
+          y: '10%',
         },
         width: '300px',
         rotation: 0,
@@ -269,7 +269,7 @@ const categories: Category[] = [
         id: 'hallerbos',
         position: {
           x: '50%',
-          y: '50%',
+          y: '30%',
         },
         width: '300px',
         rotation: 0,

@@ -13,13 +13,16 @@ export interface ImageProps {
 }
 
 const Polaroid: FunctionComponent<ImageProps> = (props) => {
+  const image = images.get(props.src)
+  if (!image) {
+    return null
+  }
+  console.log({ props, width: image.width, height: image.height })
   return (
     <>
       <style jsx>
         {`
           .container-location {
-            display: inline-block;
-            position: relative;
             width: ${props.width};
             transform: translate(-50%, -50%) rotate(${props.rotation}deg);
             top: ${props.top};
@@ -34,10 +37,12 @@ const Polaroid: FunctionComponent<ImageProps> = (props) => {
         <a href="#" title={props.alt}>
           <Image
             priority
-            src={images.get(props.src) ?? ''}
+            src={image ?? ''}
             alt={props.alt}
             title={props.alt}
             layout="responsive"
+            // contain fill cover
+            objectFit="scale-down"
           ></Image>
         </a>
       </div>

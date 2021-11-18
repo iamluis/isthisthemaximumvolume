@@ -1,9 +1,19 @@
 .container {
   width: 100vw;
   height: 100vh;
-  padding: 4em;
   font-family: 'Anonymous Pro', monospace;
+
+  background-image: url('../public/background.jpeg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container::after {
   background-color: #7db0ca;
+  content: '';
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Google Fonts */
