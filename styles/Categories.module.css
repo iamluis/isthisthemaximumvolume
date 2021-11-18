@@ -43,3 +43,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.trackContainer {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.coloredTrack {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom right,
+    transparent 40%,
+    white 60%
+  );
+  background-repeat: no-repeat;
+  background-position: left, right;
+}

@@ -29,7 +29,7 @@ const StoryPage: NextPage<{
       <div className={styles.background}>
         <div className={styles.blur}></div>
         <div className={styles.box}>
-          {category.images.map((image,i) => {
+          {category.images.map((image, i) => {
             return (
               <Polaroid
                 alt={image.id}
@@ -51,15 +51,8 @@ const StoryPage: NextPage<{
                 router.push('/story/' + ids[newIdx])
               }}
               renderTrack={({ props, children }) => (
-                <div
-                  {...props}
-                  style={{
-                    ...props.style,
-                    height: '6px',
-                    width: '100%',
-                    backgroundColor: '#fff',
-                  }}
-                >
+                <div {...props} className={styles.trackContainer}>
+                  <div className={styles.coloredTrack}></div>
                   {children}
                 </div>
               )}
@@ -68,9 +61,10 @@ const StoryPage: NextPage<{
                   {...props}
                   style={{
                     ...props.style,
-                    height: '42px',
-                    width: '42px',
-                    backgroundColor: '#fff',
+                    height: '50px',
+                    width: '20px',
+                    backgroundColor: '#1680d6',
+                    border: '5px solid #fff',
                   }}
                 />
               )}
