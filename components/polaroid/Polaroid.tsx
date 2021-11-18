@@ -15,6 +15,7 @@ export interface ImageProps {
 const Polaroid: FunctionComponent<ImageProps> = (props) => {
   const image = images.get(props.src)
   if (!image) {
+    console.log(`Src not found for id ${props.alt}`)
     return null
   }
   return (
