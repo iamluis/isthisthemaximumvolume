@@ -34,7 +34,7 @@ const StoryPage: NextPage<{
             return (
               <Polaroid
                 alt={image.id}
-                key={i}
+                key={i + ids[idx]}
                 width={image.width}
                 rotation={image.rotation}
                 top={image.position.y}
@@ -115,7 +115,11 @@ const StoryPage: NextPage<{
             />
             <span className={styles.label}>max</span>
           </div>
-          <div className={styles.categories}><span className={styles.categoryText}>{category.explanation ?? 'No catgory'}</span></div>
+          <div className={styles.categories}>
+            <span className={styles.categoryText}>
+              {category.explanation ?? 'No catgory'}
+            </span>
+          </div>
         </div>
       </div>
     </div>

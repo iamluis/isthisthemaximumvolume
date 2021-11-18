@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         </p>
         <div className={styles.links}>
           <div>
-            <Link href="/story/greece_boat" passHref>
+            <Link href="/story/Coloc" passHref>
               <span className={`${styles.button} ${styles.left}`}>
                 Give me photos!
               </span>
