@@ -11,7 +11,8 @@ const videos: string[] = [
   "https://www.youtube.com/embed/KNCg0-T5F5o",
   "https://www.youtube.com/embed/iPGgnzc34tY",
   "https://www.youtube.com/embed/c0-hvjV2A5Y",
-  "https://www.youtube.com/embed/GG2IQguY-J0"
+  "https://www.youtube.com/embed/GG2IQguY-J0",
+  "https://www.youtube.com/embed/ATjc8itIwtI"
 ];
 
 const Home: NextPage = () => {

@@ -1,11 +1,6 @@
 .container {
-  width: 100vw;
   height: 100vh;
   font-family: 'Anonymous Pro', monospace;
-  background-color: var(--background-color);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .container::after {
@@ -16,89 +11,86 @@
 }
 
 .content {
-  position: relative;
-  top: 50%;
-  text-align: center;
-  white-space: nowrap;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .links {
-  box-sizing: content-box;
+  width: 50%;
   display: flex;
-  justify-content: space-evenly;
-  width: 800px;
-  height: 100px;
-  transform: translate(-80px, 0px);
+  justify-content: center;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.link {
+  width: fit-content;
+  border: 2px solid lightsalmon;
+  border-radius: 20px;
+  padding: 10px;
+  min-width: 200px;
+  text-align: center;
+  background-color: antiquewhite;
 }
 
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 .line1 {
-  position: relative;
-  top: 50%;
-  width: var(--text-width);
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.75);
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 400%;
+  font-size: 60px;
   text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-  margin-bottom: 30px;
-}
-
-.button {
-  padding: 20px;
-  color: rgba(255, 255, 255, 0.75);
-  border-radius: 50px;
-  background: var(--background-color);
-  box-shadow: var(--shadow-up);
-  width: 190px;
-  font-size: 1.5em;
-}
-
-.button:hover {
-  border-radius: 50px;
-  box-shadow: var(--shadow-down);
-  transform: scale(0.98);
-}
-
-.left {
-  position: relative;
-  top: 55%;
-  left: 32%;
-}
-
-.right {
-  position: relative;
-  top: 55%;
-  left: 42%;
+  white-space: normal;
+  padding: 20px 0px;
 }
 
 /* Animation */
-.animTypewriter {
-  animation: typewriter 3s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
+.typewriter {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
 }
-@keyframes typewriter {
+
+.carret {
+  animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
   from {
-    width: 0;
+    width: 0
   }
+
   to {
-    width: var(--text-width);
+    width: 100%
   }
 }
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
   to {
-    border-right-color: transparent;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
   }
 }
