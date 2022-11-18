@@ -42,7 +42,7 @@ const Home: NextPage = () => {
   }, messageShowing ? null : 100);
 
   return (
-    <div className={`${styles.container} fun-background`}>
+    <div className={`${styles.container} fun-background default-background`}>
       <MouseConfetti></MouseConfetti>
       <Head>
         <title>Maximum Volu.me</title>

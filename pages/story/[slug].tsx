@@ -131,7 +131,7 @@ const StoryPage: NextPage<{
           </div>
         </div>
       </div> : 
-        <div className={`${styles.mobile} fun-background`}>
+        <div className={`${styles.mobile} fun-background default-background`}>
           I&apos;m sorry but please use me on a bigger screen!
           <Link href="/" passHref>
             <a className={`button ${styles.goHome}`}>Home?</a>
