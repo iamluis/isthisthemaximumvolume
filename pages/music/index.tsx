@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       <h1 className={styles.cutText}>Music that made us</h1>
       <div className={styles.videos}>
         {videos.map(video => {
-          return (<div className={styles.video}>
+          return (<div key={video} className={styles.video}>
             <iframe
               className={styles.iframe}
               src={video}
