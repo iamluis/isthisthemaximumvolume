@@ -13,11 +13,11 @@ const Home: NextPage = () => {
         <meta name="description" content="I love plants!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <div className={styles.home}>
+      <div className={styles.home}>
         <Link href="/" passHref>
           Home
         </Link>
-      </div> */}
+      </div>
       <div className={styles.content}>
         <div className={styles.plant}>
         <Image
