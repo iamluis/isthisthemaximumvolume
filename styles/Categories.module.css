@@ -99,3 +99,22 @@
   background-repeat: no-repeat;
   background-position: left, right;
 }
+
+.mobile {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+}
+
+.goHome {
+  color: black;
+}
