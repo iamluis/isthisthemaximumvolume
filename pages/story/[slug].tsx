@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { getTrackBackground, Range } from 'react-range'
 import Polaroid from '../../components/polaroid/Polaroid'
@@ -34,7 +35,7 @@ const StoryPage: NextPage<{
             return (
               <Polaroid
                 alt={image.id}
-                key={i}
+                key={i + ids[idx]}
                 width={image.width}
                 rotation={image.rotation}
                 top={image.position.y}
@@ -115,7 +116,16 @@ const StoryPage: NextPage<{
             />
             <span className={styles.label}>max</span>
           </div>
-          <div className={styles.categories}><span className={styles.categoryText}>{category.explanation ?? 'No catgory'}</span></div>
+          <div className={styles.categories}>
+            <span className={styles.categoryText}>
+              {category.explanation ?? 'No catgory'}
+            </span>
+          </div>
+          <div className={styles.home}>
+            <Link href="/" passHref>
+              Confetti!
+            </Link>
+          </div>
         </div>
       </div>
     </div>

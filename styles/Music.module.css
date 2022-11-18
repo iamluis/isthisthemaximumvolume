@@ -23,3 +23,12 @@
 .video {
   padding: 20px;
 }
+
+.home {
+  background-color: aliceblue;
+  padding: 10px;
+  width: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

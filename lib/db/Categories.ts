@@ -754,19 +754,19 @@ const selfies: Category = {
 }
 
 const categories: Category[] = [
-  greece_boat,
-  chopsticks,
-  greece_phiri,
-  general,
-  sunset,
-  cleaning,
   coloc,
-  crazy,
-  hats,
+  chopsticks,
+  cleaning,
+  model,
+  general,
+  greece_phiri,
+  greece_boat,
+  sunset,
   food,
   sofas,
   masks,
-  model,
+  hats,
+  crazy,
   selfies,
 ]
 

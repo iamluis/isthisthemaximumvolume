@@ -30,9 +30,9 @@
   box-sizing: content-box;
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  width: 800px;
   height: 100px;
-  transform: translate(-60px, 0px);
+  transform: translate(-80px, 0px);
 }
 
 /* Google Fonts */
