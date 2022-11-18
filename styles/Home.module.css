@@ -26,7 +26,7 @@
   align-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 24px;
 }
 
 .link {
@@ -48,7 +48,7 @@
   font-size: 60px;
   text-align: center;
   white-space: normal;
-  padding: 20px 0px;
+  padding: 40px 10px;
 }
 
 /* Animation */

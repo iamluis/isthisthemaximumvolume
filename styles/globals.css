@@ -42,3 +42,13 @@ a {
   );  
   animation: AnimateBG 10s ease infinite;
 }
+
+.button {
+  width: fit-content;
+  border: 2px solid lightsalmon;
+  border-radius: 20px;
+  padding: 10px;
+  min-width: 200px;
+  text-align: center;
+  background-color: antiquewhite;
+}
