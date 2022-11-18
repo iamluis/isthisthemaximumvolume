@@ -1,27 +1,78 @@
+@keyframes AnimateBG { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
 .container {
   min-height: 100vh;
   width: 100%;
-  font-family: 'Anonymous Pro', monospace;
-  background-color: var(--background-color);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-family: 'Rubik Microbe', cursive;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+        -45deg, 
+        #6E97AF 0%, 
+        #92989B 25%, 
+        #4E80A5 51%, 
+        #4A77A0 100%
+  );  
+  animation: AnimateBG 10s ease infinite;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
+.cutText {
+  font-size: 40px;
+  --random-text: 'music that made us';
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.cutText:after {
+  content: var(--random-text);
+  position: absolute;
+  left: -4px;
+  top: -2px;
+  color: #4464AD;
+  
+  --path: polygon(0 25%, 100% 65%, 100% 100%, 0% 100%);
+  -webkit-clip-path: var(--path);
+  clip-path: var(--path);
+}
+
+.cutText:before {
+  content: var(--random-text);
+  position: absolute;
+  color: #F58F29;
+  --path: polygon(0 0, 110% 0, 100% 65%, 0 25%);
+  -webkit-clip-path: var(--path);
+  clip-path: var(--path);
+}
+
 .videos {
+  justify-content: space-evenly;
   height: 100%;
+  width: 100%;
+  max-width: 1100px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(100px, 500px));
   gap: 10px;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 1fr;
 }
 
 .video {
-  padding: 20px;
+  
+}
+
+.iframe {
+  padding: 10px 0px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
 }
 
 .home {

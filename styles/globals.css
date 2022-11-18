@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
 html,
 body {
   height: 100%;
@@ -13,7 +14,7 @@ a {
 }
 
 :root {
-  --background-color: #3eb0ea;
+  --background-color: #65C3F0;
   --shadow-up: 22px 22px 43px #2d80ab, -22px -22px 43px #4fe0ff;
   --shadow-down: inset 22px 22px 43px #2d80ab, inset -22px -22px 43px #4fe0ff;
   --text-width: 13em;
@@ -21,4 +22,10 @@ a {
 
 * {
   /*box-sizing: border-box;*/
+}
+
+@keyframes AnimateBG { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
