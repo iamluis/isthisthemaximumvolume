@@ -1,34 +1,76 @@
+
+
 .container {
   min-height: 100vh;
   width: 100%;
-  font-family: 'Anonymous Pro', monospace;
-  background-color: var(--background-color);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-family: 'Rubik Microbe', cursive;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 0px 14px; 
+}
+
+.cutText {
+  margin-top: 5px;
+  font-size: 40px;
+  --random-text: 'music that made us';
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.cutText:after {
+  content: var(--random-text);
+  position: absolute;
+  left: -4px;
+  top: -2px;
+  color: #4464AD;
+  
+  --path: polygon(0 25%, 100% 65%, 100% 100%, 0% 100%);
+  -webkit-clip-path: var(--path);
+  clip-path: var(--path);
+}
+
+.cutText:before {
+  content: var(--random-text);
+  position: absolute;
+  color: #F58F29;
+  --path: polygon(0 0, 110% 0, 100% 65%, 0 25%);
+  -webkit-clip-path: var(--path);
+  clip-path: var(--path);
 }
 
 .videos {
+  justify-content: space-evenly;
   height: 100%;
+  width: 100%;
+  max-width: 1100px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(100px, 500px));
   gap: 10px;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 1fr;
 }
 
 .video {
-  padding: 20px;
+ 
+}
+
+.iframe {
+  padding: 10px 0px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
 }
 
 .home {
-  background-color: aliceblue;
+  color: #F58F29;
   padding: 10px;
+  align-self: flex-start;
   width: 90px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  font-size: 20px;
+}
+
+.home:hover {
+  box-shadow:  2px 2px 1px 1px #F58F29;
 }

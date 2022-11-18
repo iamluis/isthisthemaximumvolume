@@ -8,6 +8,7 @@ import { getCategoryIds } from '../../lib/api/getCategories'
 import { getCategoryBySlug } from '../../lib/api/getCategoryBySlug'
 import Category from '../../lib/model/Category'
 import styles from '../../styles/Categories.module.css'
+import { useMedia } from 'react-use'
 
 const StoryPage: NextPage<{
   category: Category
@@ -18,6 +19,8 @@ const StoryPage: NextPage<{
   const router = useRouter()
   const min = 0
   const max = size - 1
+  const moreThan1000 = useMedia('(min-width:1000px)');
+
   return (
     <div className={styles.container}>
       <Head>
@@ -28,7 +31,7 @@ const StoryPage: NextPage<{
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.background}>
+      {moreThan1000 ? <div className={styles.background}>
         <div className={styles.blur}></div>
         <div className={styles.box}>
           {category.images.map((image, i) => {
@@ -127,7 +130,15 @@ const StoryPage: NextPage<{
             </Link>
           </div>
         </div>
-      </div>
+      </div> : 
+        <div className={`${styles.mobile} fun-background default-background`}>
+          I&apos;m sorry but please use me on a bigger screen!
+          <Link href="/" passHref>
+            <a className={`button ${styles.goHome}`}>Home?</a>
+          </Link>
+        </div>
+      }
+
     </div>
   )
 }

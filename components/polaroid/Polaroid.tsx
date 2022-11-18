@@ -20,7 +20,7 @@ const Polaroid: FunctionComponent<ImageProps> = (props) => {
   }
   return (
     <>
-      <style jsx>
+      <style jsx={true}>
         {`
           .container-location {
             width: ${props.width};

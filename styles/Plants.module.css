@@ -1,0 +1,46 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.plantBackground {
+  --first-color: #A1CDA8;
+  --second-color: #B5DFCA;
+  --third-color: #AD9BAA;
+  --fourth-color: #C5E7E2;
+ }
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.home {
+  color: #627264;
+  padding: 10px;
+  align-self: flex-start;
+  width: 90px;
+  font-size: 20px;
+}
+
+.home:hover {
+  box-shadow:  2px 2px 1px 1px #627264;
+}
+
+.button {
+  width: fit-content;
+  border: 2px solid #627264;
+  border-radius: 20px;
+  padding: 10px;
+  min-width: 200px;
+  text-align: center;
+  color: #8e387e;
+  background-color: #A1CDA8;
+}
