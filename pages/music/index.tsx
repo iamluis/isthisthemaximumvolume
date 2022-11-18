@@ -8,6 +8,8 @@ const videos: string[] = [
   "https://www.youtube.com/embed/Su6kidaGW_8",
   "https://www.youtube.com/embed/Govg_XmORLE",
   "https://www.youtube.com/embed/rcaf9pBdhrw",
+  "https://www.youtube.com/embed/KNCg0-T5F5o",
+  "https://www.youtube.com/embed/iPGgnzc34tY",
   "https://www.youtube.com/embed/c0-hvjV2A5Y",
   "https://www.youtube.com/embed/GG2IQguY-J0"
 ];
