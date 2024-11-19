@@ -21,9 +21,8 @@ const Home: NextPage = () => {
   const checkAnswer = (input: string): boolean => {
     const normalizedInput = input.toLowerCase().trim()
     const encodedAnswers = [
-        'dGlueYVzcGH',
-        'dGlueXNwYc==',
-        'dGhlYHRpbnlgc3Bh'
+        '³&ï¯',
+        '³ªy©¢',
       ]
     return encodedAnswers.some(encoded => 
         decodeAnswer(encoded) === normalizedInput
@@ -122,7 +121,7 @@ const Home: NextPage = () => {
                 className={styles.hintButton}
               >
                 Need a Hint?
-              </button> : <div>You get a hint on the 07/12 🤭</div> }
+              </button> : <div styles="text-decoration:italic;">You get a hint on the 07/12 🤭</div> }
             </div>
           </form>
 
