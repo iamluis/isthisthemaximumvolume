@@ -58,13 +58,19 @@ const Home: NextPage = () => {
           <div className={styles.riddleBox}>
             <p>
               In Brussels&apos; heart where gardens grow,
+              <br/>
               Lies peace that ancient Greeks did know.
+              <br/>
               Like Hygeia&apos;s healing touch divine,
+              <br/>
               For two souls&apos; rest, this gift is thine.
-              
+              <br/>
               Where water flows and stress melts away,
+              <br/>
               Like Apollo&apos;s springs on a summer&apos;s day.
+              <br/>
               &quot;Mikros&quot; in Greek, but grand in care,
+              <br/>
               What treasure awaits this special pair?
             </p>
           </div>
