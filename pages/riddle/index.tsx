@@ -4,13 +4,6 @@ import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../../styles/Riddle.module.css'
 
-const hash = (str: string): string => {
-    return str.split('').reduce((acc, char) => {
-      const hash = ((acc << 5) - acc) + char.charCodeAt(0)
-      return hash & hash
-    }, 0).toString(36)
-  }
-
 const Home: NextPage = () => {
   const [answer, setAnswer] = useState('')
   const [showSuccess, setShowSuccess] = useState(false)
@@ -22,13 +15,11 @@ const Home: NextPage = () => {
   const checkAnswer = (input: string): boolean => {
     const normalizedInput = input.toLowerCase().trim()
     const encodedAnswers =  [
-        '-xlon0c',
-        '-lpd1ek',
-        'td3e4z'
+        'tiny spa',
+        'the tiny spa',
+        'tinyspa'
       ]
-    return encodedAnswers.some(encoded => 
-        hash(encoded) === normalizedInput
-      );
+    return encodedAnswers.includes(normalizedInput)
   }
 
   const getErrorMessage = (attempts: number): string => {
