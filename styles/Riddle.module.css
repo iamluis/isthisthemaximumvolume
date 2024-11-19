@@ -1,3 +1,15 @@
+.home {
+    color: #627264;
+    padding: 10px;
+    align-self: flex-start;
+    width: 90px;
+    font-size: 20px;
+  }
+  
+  .home:hover {
+    box-shadow:  2px 2px 1px 1px #627264;
+  }
+
 .container {
     min-height: 100vh;
     background: linear-gradient(to bottom, #f0f7ff, #e6f0ff);

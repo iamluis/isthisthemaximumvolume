@@ -45,6 +45,11 @@ const Home: NextPage = () => {
         <meta name="description" content="Solve the riddle to reveal your special gift!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={styles.home}>
+        <Link href="/" passHref>
+          Home
+        </Link>
+      </div>
 
       <main className={styles.main}>
         <div className={styles.content}>
