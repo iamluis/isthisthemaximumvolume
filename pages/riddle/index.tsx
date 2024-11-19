@@ -22,9 +22,9 @@ const Home: NextPage = () => {
   const checkAnswer = (input: string): boolean => {
     const normalizedInput = input.toLowerCase().trim()
     const encodedAnswers =  [
-        'a1b2c3',
-        'd4e5f6',
-        'g7h8i9'
+        '-xlon0c',
+        '-lpd1ek',
+        'td3e4z'
       ]
     return encodedAnswers.some(encoded => 
         hash(encoded) === normalizedInput
