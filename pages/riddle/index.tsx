@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   const [answer, setAnswer] = useState('')
   const [showSuccess, setShowSuccess] = useState(false)
   const [showHint, setShowHint] = useState(false)
-  const showHintButton = new Date('2025-11-18') < new Date()
+  const showHintButton = new Date('2024-11-18') < new Date()
   const [showError, setShowError] = useState(false)
   const [attempts, setAttempts] = useState(0)
   
