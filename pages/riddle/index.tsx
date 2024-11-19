@@ -2,12 +2,14 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
-import styles from '../../styles/Riddle.module.css'
+import styles from '../styles/Riddle.module.css'
 
 const Home: NextPage = () => {
   const [answer, setAnswer] = useState('')
   const [showSuccess, setShowSuccess] = useState(false)
   const [showHint, setShowHint] = useState(false)
+  const [showError, setShowError] = useState(false)
+  const [attempts, setAttempts] = useState(0)
   
   const checkAnswer = (input: string): boolean => {
     const normalizedInput = input.toLowerCase().trim()
@@ -15,10 +17,29 @@ const Home: NextPage = () => {
     return correctAnswers.includes(normalizedInput)
   }
 
+  const getErrorMessage = (attempts: number): string => {
+    const messages = [
+      "Hmm, that's not quite right. Try again!",
+      "By Zeus's beard, that's not it! Maybe check the hint?",
+      "By the gods of Olympus, keep trying!",
+      "Athena suggests you might want to use that hint button...",
+      "Perhaps Hermes himself is making this tricky for you..."
+    ]
+    return messages[Math.min(attempts - 1, messages.length - 1)]
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (checkAnswer(answer)) {
       setShowSuccess(true)
+      setShowError(false)
+    } else {
+      setAttempts(prev => prev + 1)
+      setShowError(true)
+      // Auto-show hint after 3 wrong attempts
+      if (attempts >= 2 && !showHint) {
+        setShowHint(true)
+      }
     }
   }
 
@@ -63,8 +84,12 @@ const Home: NextPage = () => {
                 type="text"
                 id="answer"
                 value={answer}
-                onChange={(e) => setAnswer(e.target.value)}
+                onChange={(e) => {
+                  setAnswer(e.target.value)
+                  setShowError(false) // Clear error when typing
+                }}
                 placeholder="Enter your answer..."
+                className={showError ? styles.inputError : ''}
               />
             </div>
             
@@ -82,13 +107,20 @@ const Home: NextPage = () => {
             </div>
           </form>
 
+          {/* Error Message */}
+          {showError && (
+            <div className={styles.error}>
+              <p>⚡ {getErrorMessage(attempts)}</p>
+            </div>
+          )}
+
           {/* Success Message */}
           {showSuccess && (
             <div className={styles.success}>
               <p>🎉 Congratulations! You&apos;ve solved the riddle!</p>
               <Link href="/voucher.pdf" passHref>
                 <span className={styles.downloadButton}>
-                  Download Your Gift
+                  Download Your Gift 🎁
                 </span>
               </Link>
             </div>
@@ -98,6 +130,7 @@ const Home: NextPage = () => {
           {showHint && (
             <div className={styles.hint}>
               <p>🤔 Think about the Greek word &quot;Mikros&quot; and its meaning in English...</p>
+              <p className={styles.hintExtra}>Still stuck? &quot;Mikros&quot; means &quot;tiny&quot; in Greek!</p>
             </div>
           )}
         </div>
