@@ -110,6 +110,10 @@
     gap: 1rem;
     flex-direction: column;
   }
+
+  .hint {
+    font-style: italic;
+  }
   
   .submitButton, .hintButton, .downloadButton {
     flex: 1;

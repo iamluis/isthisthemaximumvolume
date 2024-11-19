@@ -121,7 +121,7 @@ const Home: NextPage = () => {
                 className={styles.hintButton}
               >
                 Need a Hint?
-              </button> : <div styles="text-decoration:italic;">You get a hint on the 07/12 🤭</div> }
+              </button> : <div className={styles.hint}>You get a hint on the 07/12 🤭</div> }
             </div>
           </form>
 
