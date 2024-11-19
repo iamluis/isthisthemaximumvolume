@@ -136,7 +136,6 @@ const Home: NextPage = () => {
           {showHint && (
             <div className={styles.hint}>
               <p>🤔 Think about the Greek word &quot;Mikros&quot; and its meaning in English...</p>
-              <p className={styles.hintExtra}>Still stuck? &quot;Mikros&quot; means &quot;tiny&quot; in Greek!</p>
             </div>
           )}
         </div>
