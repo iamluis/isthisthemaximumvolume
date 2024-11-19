@@ -81,6 +81,16 @@
     box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
   }
   
+  .inputGroup .inputError {
+    border-color: #e53e3e;
+    background-color: #fff5f5;
+  }
+  
+  .inputGroup .inputError:focus {
+    border-color: #e53e3e;
+    box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+  }
+  
   .buttonGroup {
     display: flex;
     gap: 1rem;
@@ -139,6 +149,28 @@
     border: 1px solid #fefcbf;
     padding: 1rem;
     border-radius: 0.5rem;
+  }
+  
+  .hintExtra {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #975a16;
+  }
+  
+  .error {
+    background-color: #fff5f5;
+    border: 1px solid #feb2b2;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #c53030;
+    text-align: center;
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
   }
   
   .footer {
