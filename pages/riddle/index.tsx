@@ -19,13 +19,12 @@ const Home: NextPage = () => {
 
   const getErrorMessage = (attempts: number): string => {
     const messages = [
-      "Hmm, that's not quite right. Try again!",
       "By Zeus's beard, that's not it! Maybe check the hint?",
       "By the gods of Olympus, keep trying!",
       "Athena suggests you might want to use that hint button...",
       "Perhaps Hermes himself is making this tricky for you..."
     ]
-    return messages[Math.min(attempts - 1, messages.length - 1)]
+    return messages[attempts%messages.length - 1]
   }
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -36,10 +35,6 @@ const Home: NextPage = () => {
     } else {
       setAttempts(prev => prev + 1)
       setShowError(true)
-      // Auto-show hint after 3 wrong attempts
-      if (attempts >= 2 && !showHint) {
-        setShowHint(true)
-      }
     }
   }
 
