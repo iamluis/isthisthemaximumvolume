@@ -4,11 +4,12 @@ import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../../styles/Riddle.module.css'
 
-const decodeAnswer = (encoded: string): string => {
-    return atob(encoded).split('').map(char => 
-      String.fromCharCode(char.charCodeAt(0) - 3)
-    ).join('')
-}
+const hash = (str: string): string => {
+    return str.split('').reduce((acc, char) => {
+      const hash = ((acc << 5) - acc) + char.charCodeAt(0)
+      return hash & hash
+    }, 0).toString(36)
+  }
 
 const Home: NextPage = () => {
   const [answer, setAnswer] = useState('')
@@ -20,12 +21,13 @@ const Home: NextPage = () => {
   
   const checkAnswer = (input: string): boolean => {
     const normalizedInput = input.toLowerCase().trim()
-    const encodedAnswers = [
-        '³&ï¯',
-        '³ªy©¢',
+    const encodedAnswers =  [
+        'a1b2c3',
+        'd4e5f6',
+        'g7h8i9'
       ]
     return encodedAnswers.some(encoded => 
-        decodeAnswer(encoded) === normalizedInput
+        hash(encoded) === normalizedInput
       );
   }
 
