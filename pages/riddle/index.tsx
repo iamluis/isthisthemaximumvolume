@@ -8,6 +8,7 @@ const Home: NextPage = () => {
   const [answer, setAnswer] = useState('')
   const [showSuccess, setShowSuccess] = useState(false)
   const [showHint, setShowHint] = useState(false)
+  const showHintButton = new Date('2025-11-20') < new Date()
   const [showError, setShowError] = useState(false)
   const [attempts, setAttempts] = useState(0)
   
@@ -103,13 +104,13 @@ const Home: NextPage = () => {
               <button type="submit" className={styles.submitButton}>
                 Check Answer
               </button>
-              <button
+              { showHintButton ? <button
                 type="button"
                 onClick={() => setShowHint(true)}
                 className={styles.hintButton}
               >
                 Need a Hint?
-              </button>
+              </button> : <div/> }
             </div>
           </form>
 
