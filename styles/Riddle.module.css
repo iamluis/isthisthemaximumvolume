@@ -40,6 +40,8 @@
     padding: 1.5rem;
     border-radius: 0.75rem;
     border: 1px solid #e1effe;
+    display: flex;
+    justify-content: center;
   }
   
   .riddleBox p {
