@@ -4,18 +4,30 @@ import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../../styles/Riddle.module.css'
 
+const decodeAnswer = (encoded: string): string => {
+    return atob(encoded).split('').map(char => 
+      String.fromCharCode(char.charCodeAt(0) - 3)
+    ).join('')
+}
+
 const Home: NextPage = () => {
   const [answer, setAnswer] = useState('')
   const [showSuccess, setShowSuccess] = useState(false)
   const [showHint, setShowHint] = useState(false)
-  const showHintButton = new Date('2024-11-18') < new Date()
+  const showHintButton = new Date('2024-12-07') < new Date()
   const [showError, setShowError] = useState(false)
   const [attempts, setAttempts] = useState(0)
   
   const checkAnswer = (input: string): boolean => {
     const normalizedInput = input.toLowerCase().trim()
-    const correctAnswers = ['tiny spa', 'tinyspa', 'the tiny spa']
-    return correctAnswers.includes(normalizedInput)
+    const encodedAnswers = [
+        'dGlueYVzcGH',
+        'dGlueXNwYc==',
+        'dGhlYHRpbnlgc3Bh'
+      ]
+    return encodedAnswers.some(encoded => 
+        decodeAnswer(encoded) === normalizedInput
+      );
   }
 
   const getErrorMessage = (attempts: number): string => {
@@ -110,7 +122,7 @@ const Home: NextPage = () => {
                 className={styles.hintButton}
               >
                 Need a Hint?
-              </button> : <div/> }
+              </button> : <div>You get a hint on the 07/12 🤭</div> }
             </div>
           </form>
 
@@ -125,7 +137,7 @@ const Home: NextPage = () => {
           {showSuccess && (
             <div className={styles.success}>
               <p>🎉 Congratulations! You&apos;ve solved the riddle!</p>
-              <Link href="/voucher.pdf" passHref>
+              <Link href="pdf/Alexy_Yannis.pdf" passHref>
                 <span className={styles.downloadButton}>
                   Download Your Gift 🎁
                 </span>
