@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       "Athena suggests you might want to use that hint button...",
       "Perhaps Hermes himself is making this tricky for you..."
     ]
-    return messages[attempts%messages.length - 1]
+    return messages[(attempts%messages.length) - 1]
   }
 
   const handleSubmit = (e: React.FormEvent) => {
