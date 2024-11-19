@@ -129,6 +129,7 @@ const Home: NextPage = () => {
           {showSuccess && (
             <div className={styles.success}>
               <p>🎉 Congratulations! You&apos;ve solved the riddle!</p>
+              <p>We recommend the garden if time allows 🤭 😜!</p>
               <Link href="pdf/Alexy_Yannis.pdf" passHref>
                 <span className={styles.downloadButton}>
                   Download Your Gift 🎁
